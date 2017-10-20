@@ -1,24 +1,24 @@
-.beforeResumeLine {
+.beforeGuessLine {
   border: 1px solid red;
   height: 0px;
   -webkit-transition: height 2s;
   -webkit-transition-delay: 1s;
 }
 
-.afterResumeLine {
+.afterGuessLine {
   border: 1px solid red;
   height: 150px;
   -webkit-transition: height 1s;
 }
 
-.beforeResumePage button {
+.beforeGuessPage button {
   display: block;
   margin: 0 auto;
   visibility: hidden;
   -webkit-transition: visibility 1s;
 }
 
-.afterResumePage button {
+.afterGuessPage button {
   display: block;
   margin: 0 auto;
   visibility: visible;
@@ -26,21 +26,15 @@
   -webkit-transition-delay: 2s;
 }
 
-.beforeResumePage {
+.beforeGuessPage {
   border: 1px solid blue;
   height: 0px;
   visibility: hidden;
   -webkit-transition: height 2s, visibility 2s;
 }
 
-.afterResumePage {
+.afterGuessPage {
   border: 1px solid blue;
   height: 400px;
   -webkit-transition: height 2s, visibility 2s;
 }
-
-/*#bottomRes {
-  border: 1px solid red;
-  height: 50px;
-}
-*/

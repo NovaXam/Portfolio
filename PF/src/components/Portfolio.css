@@ -1,0 +1,128 @@
+.beforePortLine {
+  height: 0px;
+  -webkit-transition: height 2s
+}
+
+.beforePortLine button {
+  display: block;
+  margin: 0 auto;
+  visibility: hidden;
+  -webkit-transition: visibility 1s;
+}
+
+.afterPortLine {
+  height: 150px;
+  -webkit-transition: height 2s;
+}
+
+.afterPortLine button {
+  display: block;
+  margin: 0 auto;
+  visibility: visible;
+  -webkit-transition: visibility 2s;
+  -webkit-transition-delay: 2s;
+}
+
+.beforePortPage {
+ height: 0px;
+  -webkit-transition: height 2s
+}
+/*need to be improved*/
+.beforePortPage ul li {
+  display: none;
+  -webkit-transition: visibility 2s;
+}
+
+.afterPortPage {
+  width: 90em;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 400px;
+  -webkit-transition: height 2s;
+}
+
+.portMainBlock ul {
+  display: inline-flex;
+  list-style: none;
+  flex-direction: row;
+  margin-left: -45px;
+}
+
+.beforePortPage ul img {
+  border: 1px solid black;
+  height: 0px;
+  width: 0px;
+  border-radius: 10px;
+  margin: 10px 150px 10px;
+  visibility: hidden;
+  -webkit-transition: height 2s, width 2s, margin 2s, visibility 1.5s;
+}
+
+/* Back Pulse */
+@-webkit-keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}
+.hvr-back-pulse {
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  left: -321px;
+  top: -147px;
+  border-radius: 10px;
+  color: transparent;
+  font-size: 30px;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
+  /*-webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;*/
+  background-color: rgba(32,152,209,0.8);
+  /*background-color: #2098d1;*/
+  color: white;
+}
+
+.hvr-back-pulse p {
+  margin-top: 125px;
+}
+
+.afterPortPage ul li {
+  height: 300px;
+  width: 300px;
+  margin: 0px 30px;
+}
+
+.afterPortPage ul img {
+  border: 1px solid black;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  margin: 0px 20px 0px;
+  visibility: visible;
+  -webkit-transition: height 2s, width 2s, margin 2s, visibility 2s;
+  -webkit-transition-delay: 1s;
+}

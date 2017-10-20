@@ -1,0 +1,40 @@
+.beforeAboutLine {
+  border: 1px solid red;
+  height: 0px;
+  -webkit-transition: height 2s;
+  -webkit-transition-delay: 1s;
+}
+
+.afterAboutLine {
+  border: 1px solid red;
+  height: 150px;
+  -webkit-transition: height 1s;
+}
+
+.beforeAboutPage button {
+  display: block;
+  margin: 0 auto;
+  visibility: hidden;
+  -webkit-transition: visibility 1s;
+}
+
+.afterAboutPage button {
+  display: block;
+  margin: 0 auto;
+  visibility: visible;
+  -webkit-transition: visibility 2s;
+  -webkit-transition-delay: 2s;
+}
+
+.beforeAboutPage {
+  border: 1px solid blue;
+  height: 0px;
+  visibility: hidden;
+  -webkit-transition: height 2s, visibility 2s;
+}
+
+.afterAboutPage {
+  border: 1px solid blue;
+  height: 400px;
+  -webkit-transition: height 2s, visibility 2s;
+}

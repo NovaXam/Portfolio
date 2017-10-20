@@ -18,6 +18,28 @@
   -webkit-transition: height 2s, width 2s, top 2s, -webkit-transform 2s;
 }
 
+.beforeLogo img:hover {
+  animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+   10%, 90% {
+    transform: translate3d(-1px, -1px, -1px);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 1px, 1px);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, -2px, -2px);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 2px, 2px);
+  }
+}
+
 .afterLogo img {
   position: relative;
   text-align: center;
@@ -42,15 +64,37 @@
   -webkit-transition: height 2s;
 }
 
-.lines {
+.lines ul {
+  display: inline-flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
   height: 0px;
   margin-top: 0px;
   -webkit-transition: height 2s;
 }
 
+.beforeClickMenu .lines {
+  height: 0px;
+  -webkit-transition: height 2s;
+}
+
 .afterClickMenu .lines {
   height: 200px;
-  /*border: 1px solid red;*/
+  border: 1px solid red;
+  -webkit-transition: height 2s;
+}
+
+.beforeClickMenu .lines ul li {
+  height: 0px;
+  -webkit-transition: height 2s;
+}
+
+.afterClickMenu .lines ul li {
+  height: 200px;
+  width: 250px;
+  margin: 0px 25px 0px;
+  border: 1px solid red;
   -webkit-transition: height 2s;
 }
 
@@ -65,19 +109,19 @@
   display: inline-flex;
   list-style: none;
   text-align: center;
-  margin: 0 auto;
+  margin: 0px 0px 0px -45px;
   flex-direction: row;
   justify-content: space-around;
 }
 
 .beforeClickMenu .categories ul img {
-  border: 1px solid black;
-  height: 0px;
-  width: 0px;
-  border-radius: 180px;
-  margin: 0px 150px 0px;
-  visibility: hidden;
-  -webkit-transition: height 2s, width 2s, margin 2s;
+    border: 1px solid black;
+    height: 0px;
+    width: 0px;
+    border-radius: 180px;
+    margin: 0px 150px 0px;
+    visibility: hidden;
+    -webkit-transition: height 2s, width 2s, margin 2s;
 }
 
 .afterClickMenu .categories ul img {
@@ -88,11 +132,16 @@
   margin: 0px 50px 0px;
   visibility: visible;
   -webkit-transition: height 2s, width 2s, margin 2s, visibility 4s;
-  -webkit-transition-delay: 1.5s;
+  -webkit-transition-delay: 0.5s;
+}
+
+.afterClickMenu .categories ul img:hover {
+  height: 225px;
+  width: 225px;
+  -webkit-transition: height 1s, width 1s;
 }
 
 .categories ul li p {
   text-align: center;
   margin: 90px auto;
 }
-
