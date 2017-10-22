@@ -3,12 +3,15 @@ import './Monster.css';
 
 const Monster = (props) => {
   return (
-    <div>
-      <div className={props.portMonsterLine}></div>
-        <div className={props.portMonsterPage}>
+    <div className="portMonMainBlock">
+      <div className={props.portMonsterLine}>
           <button id='monster' onClick={props.handlePortMonListenerRollBack}><i className="fa fa-power-off"></i></button>
-          <h1>Musci Monster </h1>
-          <p>Your personal misic labrary </p>
+        </div>
+        <div className={props.portMonsterPage}>
+          <div className='innerBlock'>
+            <h1>Musci Monster </h1>
+            <p>Your personal misic labrary </p>
+          </div>
       </div>
     </div>
     );

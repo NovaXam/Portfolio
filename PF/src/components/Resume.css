@@ -1,46 +1,88 @@
 .beforeResumeLine {
-  border: 1px solid red;
+  position: relative;
+  top: 0px;
   height: 0px;
-  -webkit-transition: height 2s;
-  -webkit-transition-delay: 1s;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #FFF515;
+  -webkit-transition: height 2s, top 2s;
+}
+
+.resumeMainBlock p {
+  font-size: 150px;
+  font-family: 'helvetica';
+  color: white;
+  letter-spacing: 100px;
+  padding: 0px 0px 0px 80px;
+  margin: 30px auto;
+  font-weight: 600;
+  color: white;
 }
 
 .afterResumeLine {
-  border: 1px solid red;
+  position: relative;
+  top: -35px;
   height: 150px;
-  -webkit-transition: height 1s;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #FFF515;
+  -webkit-transition: height 2s, top 2s;
+}
+
+.beforeResumePage {
+  height: 0px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-bottom: 0px solid #FFF515;
+  -webkit-transition: height 2s, border-bottom 2s;
+  -webkit-transition-delay: border-bottom 2s;
+}
+
+.afterResumePage {
+  height: 400px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-bottom: 3px solid #FFF515;
+  -webkit-transition: height 2s;
+  -webkit-transition-delay: border-bottom 2s;
 }
 
 .beforeResumePage button {
-  display: block;
-  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  margin: 0px auto;
+  height: 30px;
+  width: 60px;
+  border-radius: 180px;
+  background-color: #FFF515;
+  border: 3px solid white;
+  box-shadow: 1px 1px 1px 1px;
   visibility: hidden;
   -webkit-transition: visibility 1s;
 }
 
 .afterResumePage button {
-  display: block;
-  margin: 0 auto;
+  display: inline-block;
+  margin: 0px auto;
+  position: relative;
+  height: 30px;
+  width: 60px;
+  border-radius: 180px;
   visibility: visible;
+  background-color: #FFF515;
+  border: 3px solid white;
+  box-shadow: 1px 1px 1px 1px;
   -webkit-transition: visibility 2s;
-  -webkit-transition-delay: 2s;
+  -webkit-transition-delay: 1s;
 }
 
-.beforeResumePage {
-  border: 1px solid blue;
+.beforeResumePage .innerBlock {
   height: 0px;
-  visibility: hidden;
+  /*visibility: hidden;*/
   -webkit-transition: height 2s, visibility 2s;
 }
 
-.afterResumePage {
-  border: 1px solid blue;
+.afterResumePage .innerBlock {
   height: 400px;
   -webkit-transition: height 2s, visibility 2s;
 }
-
-/*#bottomRes {
-  border: 1px solid red;
-  height: 50px;
-}
-*/

@@ -11,6 +11,7 @@ import Monster from './components/Monster';
 import MissionX from './components/MissionX';
 import Source from './components/Source';
 import Resume from './components/Resume';
+import Footer from './components/partials/Footer';
 
 class App extends Component {
   constructor(props) {
@@ -40,6 +41,10 @@ class App extends Component {
       scaleSource: {},
       scaleResume: {},
       mainFlag: true,
+      workPointerGuess: {},
+      workPointerSurf: {},
+      workPointerMon: {},
+      workPointerMiss: {},
     };
 
     this.handleMainListener = this.handleMainListener.bind(this);
@@ -69,18 +74,17 @@ class App extends Component {
 
   handleMainListener(event) {
     event.preventDefault();
-    console.log(this.state.mainFlag);
     this.state.mainFlag ? (
       this.setState({
-      classMenu: 'afterClickMenu',
-      logoMain: 'afterLogo',
-      mainFlag: false,
+        classMenu: 'afterClickMenu',
+        logoMain: 'afterLogo',
+        mainFlag: false,
     })
     ) : (
       this.setState({
-      classMenu: 'beforeClickMenu',
-      logoMain: 'beforeLogo',
-      mainFlag: true,
+        classMenu: 'beforeClickMenu',
+        logoMain: 'beforeLogo',
+        mainFlag: true,
     })
     );
   }
@@ -97,7 +101,7 @@ class App extends Component {
           width: '225px',
         },
       });
-      const domScroll = Scroll.animateScroll.scrollTo(700);
+      const domScroll = Scroll.animateScroll.scrollTo(document.body.scrollHeight);
     } catch(err) {
       console.log(err);
     }
@@ -108,16 +112,16 @@ class App extends Component {
     try {
       const prev = await event.preventDefault();
       const state = await this.setState({
-      portLine: 'afterPortLine',
-      portPage: 'afterPortPage',
-      scalePortfolio: {
-        height: '225px',
-        width: '225px',
+        portLine: 'afterPortLine',
+        portPage: 'afterPortPage',
+        scalePortfolio: {
+          height: '225px',
+          width: '225px',
         },
-    });
-    const domScroll = Scroll.animateScroll.scrollTo(document.body.scrollHeight,
-      {smooth: true});
-    }catch(err) {
+      });
+      const domScroll = Scroll.animateScroll.scrollTo(document.body.scrollHeight,
+        {smooth: true});
+    } catch(err) {
       console.log(err);
     }
   }
@@ -128,9 +132,12 @@ class App extends Component {
       const state = await this.setState({
       portGuessLine: 'afterGuessLine',
       portGuessPage: 'afterGuessPage',
+      workPointerGuess: {
+        backgroundColor: 'rgba(32,152,209,0.8)',
+      },
     });
     const domScroll = Scroll.animateScroll.scrollTo(1100, { smooth: true });
-    }catch(err) {
+    } catch(err) {
       console.log(err);
     }
   }
@@ -139,11 +146,14 @@ class App extends Component {
     try {
       const prev = await event.preventDefault();
       const state = await this.setState({
-      portSurferLine: 'afterSurferLine',
-      portSurferPage: 'afterSurferPage',
-    });
-    const domScroll = Scroll.animateScroll.scrollTo(1100, { smooth: true });
-    }catch(err) {
+        portSurferLine: 'afterSurferLine',
+        portSurferPage: 'afterSurferPage',
+        workPointerSurf: {
+          backgroundColor: 'rgba(32,152,209,0.8)',
+        },
+      });
+      const domScroll = Scroll.animateScroll.scrollTo(1100, { smooth: true });
+    } catch(err) {
       console.log(err);
     }
   }
@@ -152,11 +162,14 @@ class App extends Component {
     try {
       const prev = await event.preventDefault();
       const state = await this.setState({
-      portMonsterLine: 'afterMonsterLine',
-      portMonsterPage: 'afterMonsterPage',
-    });
-    const domScroll = Scroll.animateScroll.scrollTo(1100, { smooth: true });
-    }catch(err) {
+        portMonsterLine: 'afterMonsterLine',
+        portMonsterPage: 'afterMonsterPage',
+        workPointerMon: {
+          backgroundColor: 'rgba(32,152,209,0.8)',
+        },
+      });
+      const domScroll = Scroll.animateScroll.scrollTo(1100, { smooth: true });
+    } catch(err) {
       console.log(err);
     }
   }
@@ -165,11 +178,14 @@ class App extends Component {
     try {
       const prev = await event.preventDefault();
       const state = await this.setState({
-      portMissionXLine: 'afterMissionXLine',
-      portMissionXPage: 'afterMissionXPage',
-    });
-    const domScroll = Scroll.animateScroll.scrollTo(1150, { smooth: true });
-    }catch(err) {
+        portMissionXLine: 'afterMissionXLine',
+        portMissionXPage: 'afterMissionXPage',
+        workPointerMiss: {
+          backgroundColor: 'rgba(32,152,209,0.8)',
+        },
+      });
+      const domScroll = Scroll.animateScroll.scrollTo(1150, { smooth: true });
+    } catch (err) {
       console.log(err);
     }
   }
@@ -178,15 +194,15 @@ class App extends Component {
     try {
       const prev = await event.preventDefault();
       const state = await this.setState({
-      sourceLine: 'afterSourceLine',
-      sourcePage: 'afterSourcePage',
-      scaleSource: {
-        height: '225px',
-        width: '225px',
-      },
-    });
-    const domScroll = Scroll.animateScroll.scrollTo(1150, { smooth: true });
-    }catch(err) {
+        sourceLine: 'afterSourceLine',
+        sourcePage: 'afterSourcePage',
+        scaleSource: {
+          height: '225px',
+          width: '225px',
+        },
+      });
+      const domScroll = Scroll.animateScroll.scrollTo(1150, { smooth: true });
+    } catch(err) {
       console.log(err);
     }
   }
@@ -195,15 +211,15 @@ class App extends Component {
     try {
       const prev = await event.preventDefault();
       const state = await this.setState({
-      resumeLine: 'afterResumeLine',
-      resumePage: 'afterResumePage',
-      scaleResume: {
-        height: '225px',
-        width: '225px',
-      }
-    });
-    const domScroll = Scroll.animateScroll.scrollTo(1150, { smooth: true });
-    }catch(err) {
+        resumeLine: 'afterResumeLine',
+        resumePage: 'afterResumePage',
+        scaleResume: {
+          height: '225px',
+          width: '225px',
+        },
+      });
+      const domScroll = Scroll.animateScroll.scrollTo(1150, { smooth: true });
+    } catch(err) {
       console.log(err);
     }
   }
@@ -231,6 +247,7 @@ class App extends Component {
     this.setState({
       portGuessLine: 'beforeGuessLine',
       portGuessPage: 'beforeGuessPage',
+      workPointerGuess: {},
     });
   }
 
@@ -239,6 +256,7 @@ class App extends Component {
     this.setState({
       portSurferLine: 'beforeSurferLine',
       portSurferPage: 'beforeSurferPage',
+      workPointerSurf: {},
     });
   }
 
@@ -247,14 +265,16 @@ class App extends Component {
     this.setState({
       portMonsterLine: 'beforeMonsterLine',
       portMonsterPage: 'beforeMonsterPage',
+      workPointerMon: {},
     });
   }
 
-   handlePortMissListenerRollBack(event) {
+  handlePortMissListenerRollBack(event) {
     event.preventDefault();
     this.setState({
       portMissionXLine: 'beforeMissionXLine',
       portMissionXPage: 'beforeMissionXPage',
+      workPointerMiss: {},
     });
   }
 
@@ -301,6 +321,10 @@ class App extends Component {
         <Portfolio
           portLine={this.state.portLine}
           portPage={this.state.portPage}
+          workPointerGuess={this.state.workPointerGuess}
+          workPointerSurf={this.state.workPointerSurf}
+          workPointerMon={this.state.workPointerMon}
+          workPointerMiss={this.state.workPointerMiss}
           handlePortfolioListenerRollBack={this.handlePortfolioListenerRollBack}
           handleWorksListener={this.handleWorksListener}
           handlerPortGuessListener={this.handlerPortGuessListener}
@@ -338,6 +362,7 @@ class App extends Component {
           resumePage={this.state.resumePage}
           handleResumeListenerRollBack={this.handleResumeListenerRollBack}
         />
+        <Footer />
       </div>
     );
   }

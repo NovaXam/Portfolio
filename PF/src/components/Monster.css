@@ -1,40 +1,48 @@
 .beforeMonsterLine {
-  border: 1px solid red;
   height: 0px;
   -webkit-transition: height 2s;
-  -webkit-transition-delay: 1s;
 }
 
 .afterMonsterLine {
-  border: 1px solid red;
   height: 150px;
-  -webkit-transition: height 1s;
+  -webkit-transition: height 2s;
 }
 
-.beforeMonsterPage button {
+.beforeMonsterLine button {
   display: block;
   margin: 0 auto;
   visibility: hidden;
   -webkit-transition: visibility 1s;
 }
 
-.afterMonsterPage button {
+.afterMonsterLine button {
   display: block;
   margin: 0 auto;
   visibility: visible;
   -webkit-transition: visibility 2s;
-  -webkit-transition-delay: 2s;
+  -webkit-transition-delay: 1s;
 }
 
 .beforeMonsterPage {
-  border: 1px solid blue;
   height: 0px;
-  visibility: hidden;
-  -webkit-transition: height 2s, visibility 2s;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-transition: height 2s;
 }
 
 .afterMonsterPage {
-  border: 1px solid blue;
+  height: 400px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-transition: height 2s;
+}
+
+.beforeMonsterPage .innerBlock {
+  height: 0px;
+  -webkit-transition: height 2s, visibility 2s;
+}
+
+.afterMonsterPage .innerBlock {
   height: 400px;
   -webkit-transition: height 2s, visibility 2s;
 }

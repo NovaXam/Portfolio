@@ -1,40 +1,87 @@
 .beforeSourceLine {
-  border: 1px solid red;
+  position: relative;
+  top: 0px;
   height: 0px;
-  -webkit-transition: height 2s;
-  -webkit-transition-delay: 1s;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #0CE857;
+  -webkit-transition: height 2s, top 2s;
 }
 
 .afterSourceLine {
-  border: 1px solid red;
+  position: relative;
+  top: -35px;
   height: 150px;
-  -webkit-transition: height 1s;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #0CE857;
+  -webkit-transition: height 2s, top 2s;
+}
+
+.sourceMainBlock p {
+  font-size: 150px;
+  font-family: 'helvetica';
+  color: white;
+  letter-spacing: 100px;
+  padding: 0px 0px 0px 80px;
+  margin: 30px auto;
+  font-weight: 600;
+  color: white;
+}
+
+.beforeSourcePage {
+  height: 0px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-bottom: 0px solid #0CE857;
+  -webkit-transition: height 2s, border-bottom 2s;
+  -webkit-transition-delay: border-bottom 2s;
+}
+
+.afterSourcePage {
+  height: 400px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-bottom: 3px solid #0CE857;
+  -webkit-transition: height 2s;
+  -webkit-transition-delay: border-bottom 2s;
 }
 
 .beforeSourcePage button {
-  display: block;
-  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  margin: 0px auto;
+  height: 30px;
+  width: 60px;
+  border-radius: 180px;
+  background-color: #0CE857;
+  border: 3px solid white;
+  box-shadow: 1px 1px 1px 1px;
   visibility: hidden;
   -webkit-transition: visibility 1s;
 }
 
 .afterSourcePage button {
-  display: block;
-  margin: 0 auto;
+  display: inline-block;
+  margin: 0px auto;
+  position: relative;
+  height: 30px;
+  width: 60px;
+  border-radius: 180px;
   visibility: visible;
+  background-color: #0CE857;
+  border: 3px solid white;
+  box-shadow: 1px 1px 1px 1px;
   -webkit-transition: visibility 2s;
-  -webkit-transition-delay: 2s;
+  -webkit-transition-delay: 1s;
 }
 
-.beforeSourcePage {
-  border: 1px solid blue;
+.beforeSourcePage .innerBlock {
   height: 0px;
-  visibility: hidden;
   -webkit-transition: height 2s, visibility 2s;
 }
 
-.afterSourcePage {
-  border: 1px solid blue;
+.afterSourcePage .innerBlock {
   height: 400px;
   -webkit-transition: height 2s, visibility 2s;
 }

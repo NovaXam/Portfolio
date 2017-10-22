@@ -1,40 +1,84 @@
 .beforeAboutLine {
-  border: 1px solid red;
   height: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #E80F11;
   -webkit-transition: height 2s;
-  -webkit-transition-delay: 1s;
+}
+
+.aboutMainBlock p {
+  font-size: 150px;
+  font-family: 'helvetica';
+  color: white;
+  letter-spacing: 100px;
+  padding: 0px 0px 0px 80px;
+  margin: 30px auto;
+  font-weight: 600;
+  color: white;
 }
 
 .afterAboutLine {
-  border: 1px solid red;
   height: 150px;
-  -webkit-transition: height 1s;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #E80F11;
+  -webkit-transition: height 2s;
+}
+
+.beforeAboutPage {
+  height: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-bottom: 0px solid #E80F11;
+  -webkit-transition: height 2s, border-bottom 2s;
+  -webkit-transition-delay: border-bottom 2s;
+}
+
+.afterAboutPage {
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-bottom: 3px solid #E80F11;
+  -webkit-transition: height 2s;
+  -webkit-transition-delay: border-bottom 2s;
+
 }
 
 .beforeAboutPage button {
-  display: block;
-  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  margin: 15px auto;
+  height: 30px;
+  width: 60px;
+  border-radius: 180px;
+  background-color: #E80F11;
+  border: 3px solid white;
+  box-shadow: 1px 1px 1px 1px;
   visibility: hidden;
   -webkit-transition: visibility 1s;
 }
 
 .afterAboutPage button {
-  display: block;
-  margin: 0 auto;
+  display: inline-block;
+  margin: 15px auto;
+  position: relative;
+  height: 30px;
+  width: 60px;
+  border-radius: 180px;
   visibility: visible;
+  background-color: #E80F11;
+  border: 3px solid white;
+  box-shadow: 1px 1px 1px 1px;
   -webkit-transition: visibility 2s;
-  -webkit-transition-delay: 2s;
+  -webkit-transition-delay: 1s;
 }
 
-.beforeAboutPage {
-  border: 1px solid blue;
+.beforeAboutPage .innerBlock {
   height: 0px;
-  visibility: hidden;
   -webkit-transition: height 2s, visibility 2s;
 }
 
-.afterAboutPage {
-  border: 1px solid blue;
+.afterAboutPage .innerBlock {
   height: 400px;
   -webkit-transition: height 2s, visibility 2s;
 }
