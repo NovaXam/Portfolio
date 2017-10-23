@@ -8,9 +8,9 @@ const Resume = (props) => {
         <p>CONTACT</p>
       </div>
       <div className={props.resumePage}>
-        <button id='about' onClick={props.handleResumeListenerRollBack}><i className="fa fa-power-off"></i></button>
+        <button id='about' onClick={props.handleResumeListenerRollBack}>&#8679;</button>
         <div className="innerBlock">
-          <h1>CONTACT </h1>
+          <h1>INFO </h1>
           <p>Data </p>
         </div>
       </div>

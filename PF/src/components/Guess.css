@@ -1,49 +1,286 @@
 .beforeGuessLine {
   height: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #68AFFF;
   -webkit-transition: height 2s;
+}
+
+.portGuessMainBlock p {
+  font-size: 150px;
+  font-family: 'helvetica';
+  color: white;
+  letter-spacing: 100px;
+  padding: 0px 0px 0px 80px;
+  margin: 30px auto;
+  font-weight: 600;
+  color: white;
 }
 
 .afterGuessLine {
   height: 150px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #68AFFF;
   -webkit-transition: height 2s;
-}
-
-.beforeGuessLine button {
-  display: block;
-  margin: 0 auto;
-  visibility: hidden;
-  -webkit-transition: visibility 1s;
-}
-
-.afterGuessLine button {
-  display: block;
-  margin: 0 auto;
-  visibility: visible;
-  -webkit-transition: visibility 2s;
-  -webkit-transition-delay: 1s;
 }
 
 .beforeGuessPage {
   height: 0px;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: hidden;
-  -webkit-transition: height 2s;
+  border-bottom: 0px solid #68AFFF;
+  -webkit-transition: height 2s, border-bottom 2s;
+  -webkit-transition-delay: border-bottom 2s;
 }
 
 .afterGuessPage {
-  height: 400px;
-  overflow-x: auto;
+  height: 500px;
+  overflow-x: hidden;
   overflow-y: hidden;
+  border-bottom: 3px solid #68AFFF;
   -webkit-transition: height 2s;
+  -webkit-transition-delay: border-bottom 2s;
+}
+
+.beforeGuessPage button {
+  display: inline-block;
+  position: relative;
+  margin: 15px auto;
+  height: 30px;
+  width: 60px;
+  border-radius: 180px;
+  background-color: #68AFFF;
+  border: 3px solid white;
+  outline: none;
+  z-index: -1;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px;
+  visibility: hidden;
+  -webkit-transition: visibility 1s;
+}
+
+.afterGuessPage button {
+  display: inline-block;
+  margin: 15px auto;
+  position: relative;
+  height: 30px;
+  width: 60px;
+  border-radius: 180px;
+  visibility: visible;
+  background-color: #68AFFF;
+  border: 3px solid white;
+  outline: none;
+  box-shadow: 2px 2px 2px 2px;
+  -webkit-transition: visibility 2s;
+  -webkit-transition-delay: 1s;
 }
 
 .beforeGuessPage .innerBlock {
   height: 0px;
-  /*visibility: hidden;*/
+  margin-top: 30px;
   -webkit-transition: height 2s, visibility 2s;
 }
 
 .afterGuessPage .innerBlock {
   height: 400px;
   -webkit-transition: height 2s, visibility 2s;
+}
+
+.beforeGuessPage .innerBlock .left {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  float: left;
+  margin: -15px 0px 0px 25px;
+  height: 400px;
+  width: 600px;
+  text-align: center;
+}
+
+.afterGuessPage .innerBlock .left {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  float: left;
+  margin: 15px 0px 0px 25px;
+  height: 400px;
+  width: 600px;
+  text-align: center;
+}
+
+.afterGuessPage .innerBlock .left .mainPic {
+  position: relative;
+  height: 350px;
+  width: 600px;
+}
+
+#GuPicture {
+  display: inline-block;
+  height: auto;
+  width: 525px;
+  border-radius: 5px;
+  -webkit-box-shadow:  0px 0px 10px 5px rgba(104, 175, 255, 0.3), 0 0 40px rgba(104, 175, 255, 0.3) inset;
+}
+
+.beforeGuessPage .innerBlock .left .icons {
+  display: inline-flex;
+  flex-direction: row;
+  position: relative;
+  height: 50px;
+  text-align: center;
+  margin: 20px auto 0px;
+}
+
+.afterGuessPage .innerBlock .left .icons {
+  display: inline-flex;
+  flex-direction: row;
+  position: relative;
+  /*border: 1px solid blue;*/
+  height: 50px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#iconGit {
+  display: inline-block;
+  height: 35px;
+  width: auto;
+  margin: 15px 30px;
+}
+
+#iconHer {
+  display: inline-block;
+  height: 35px;
+  width: auto;
+  margin: 15px 30px;
+}
+
+.beforeGuessPage .innerBlock .right {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  float: right;
+  margin: 70px 50px 0px 0px;
+  height: 200px;
+  width: 700px;
+  border-left: 2px solid black;
+  text-align: center;
+}
+
+.afterGuessPage .innerBlock .right {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  float: right;
+  margin: 100px 50px 0px 0px;
+  height: 200px;
+  width: 700px;
+  border-left: 2px solid black;
+  text-align: center;
+}
+
+.beforeGuessPage .innerBlock .right .descript {
+  display: inline-block;
+  position: relative;
+  height: 250px;
+  width: 650px;
+  margin: -100px 0px 0px 50px;
+  text-align: center;
+}
+
+.afterGuessPage .innerBlock .right .descript {
+  display: inline-block;
+  position: relative;
+  height: 250px;
+  width: 650px;
+  /*border: 1px solid blue;*/
+  margin: -100px 0px 0px 50px;
+  text-align: center;
+}
+
+.beforeGuessPage .innerBlock .right .descript h1 {
+  font-family: 'helvetica';
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+
+.afterGuessPage .innerBlock .right .descript h1 {
+  font-family: 'helvetica';
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+
+.beforeGuessPage .innerBlock .right .descript p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: 200;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: black;
+  padding: 0px 20px;
+}
+
+.afterGuessPage .innerBlock .right .descript p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: 200;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: black;
+  padding: 0px 20px;
+}
+
+.beforeGuessPage .innerBlock .right .tech {
+  display: inline-block;
+  height: 200px;
+  width: 650px;
+  margin: 0px 0px 0px 50px;
+  border-top: 1px solid black;
+}
+
+.afterGuessPage .innerBlock .right .tech {
+  display: inline-block;
+  height: 200px;
+  width: 650px;
+  margin: 0px 0px 0px 50px;
+  border-top: 1px solid black;
+}
+
+.beforeGuessPage .innerBlock .right .tech h1 {
+  font-size: 25px;
+  font-family: 'helvetica';
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.afterGuessPage .innerBlock .right .tech h1 {
+  font-size: 25px;
+  font-family: 'helvetica';
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.beforeGuessPage .innerBlock .right .tech p {
+  color: black;
+  font-size: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0px 80px 0px 0px;
+
+}
+
+.afterGuessPage .innerBlock .right .tech p {
+  color: black;
+  font-size: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0px 80px 0px 0px;
 }

@@ -4,7 +4,8 @@
   height: 0px;
   overflow-x: hidden;
   overflow-y: hidden;
-  background-color: #FFF515;
+  z-index: -1;
+  background-color: #FFFF67;
   -webkit-transition: height 2s, top 2s;
 }
 
@@ -25,7 +26,8 @@
   height: 150px;
   overflow-x: hidden;
   overflow-y: hidden;
-  background-color: #FFF515;
+  z-index: -1;
+  background-color: #FFFF67;
   -webkit-transition: height 2s, top 2s;
 }
 
@@ -33,7 +35,7 @@
   height: 0px;
   overflow-x: auto;
   overflow-y: hidden;
-  border-bottom: 0px solid #FFF515;
+  border-bottom: 0px solid #FFFF67;
   -webkit-transition: height 2s, border-bottom 2s;
   -webkit-transition-delay: border-bottom 2s;
 }
@@ -42,7 +44,7 @@
   height: 400px;
   overflow-x: auto;
   overflow-y: hidden;
-  border-bottom: 3px solid #FFF515;
+  border-bottom: 3px solid #FFFF67;
   -webkit-transition: height 2s;
   -webkit-transition-delay: border-bottom 2s;
 }
@@ -54,9 +56,11 @@
   height: 30px;
   width: 60px;
   border-radius: 180px;
-  background-color: #FFF515;
+  background-color: #FFFF67;
   border: 3px solid white;
-  box-shadow: 1px 1px 1px 1px;
+  outline: none;
+  z-index: -1;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px;
   visibility: hidden;
   -webkit-transition: visibility 1s;
 }
@@ -69,9 +73,10 @@
   width: 60px;
   border-radius: 180px;
   visibility: visible;
-  background-color: #FFF515;
+  background-color: #FFFF67;
   border: 3px solid white;
-  box-shadow: 1px 1px 1px 1px;
+  outline: none;
+  box-shadow: 2px 2px 2px 2px;
   -webkit-transition: visibility 2s;
   -webkit-transition-delay: 1s;
 }

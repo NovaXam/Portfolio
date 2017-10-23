@@ -8,7 +8,7 @@ const About = (props) => {
         <p>ABOUT</p>
       </div>
       <div className={props.aboutPage}>
-        <button id="about" onClick={props.handleAboutListenerRollBack}><i className="fa fa-power-off"></i></button>
+        <button id="about" onClick={props.handleAboutListenerRollBack}>&#8679;</button>
         <div className="innerBlock">
             <h1>About</h1>
             <p>Full stack software developer </p>

@@ -1,8 +1,9 @@
 .beforePortLine {
   height: 0px;
+  width: 1500px;
   overflow-x: hidden;
   overflow-y: hidden;
-  background-color: #0010FF;
+  background-color: #68AFFF;
   -webkit-transition: height 2s
 }
 
@@ -18,9 +19,10 @@
 
 .afterPortLine {
   height: 150px;
+  width: 1500px;
   overflow-x: hidden;
   overflow-y: hidden;
-  background-color: #0010FF;
+  background-color: #68AFFF;
   -webkit-transition: height 2s;
 }
 
@@ -29,10 +31,10 @@
   flex-direction: column;
   height: 0px;
   width: 1500px;
-  overflow-x: hidden;
+  overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
-  border-bottom: 0px solid #0010FF;
+  border-bottom: 0px solid #68AFFF;
   -webkit-transition: height 2s, border-bottom 2s;
   -webkit-transition-delay: border-bottom 2s;
 }
@@ -45,7 +47,7 @@
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
-  border-bottom: 3px solid #0010FF;
+  border-bottom: 3px solid #68AFFF;
   -webkit-transition: height 2s;
   -webkit-transition-delay: border-bottom 2s;
 }
@@ -58,9 +60,11 @@
   height: 30px;
   width: 60px;
   border-radius: 180px;
-  background-color: #0010FF;
+  background-color: #68AFFF;
   border: 3px solid white;
-  box-shadow: 1px 1px 1px 1px;
+  outline: none;
+  z-index: -1;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px;
   visibility: hidden;
   -webkit-transition: visibility 1s;
 }
@@ -73,9 +77,10 @@
   height: 30px;
   width: 60px;
   border-radius: 180px;
-  background-color: #0010FF;
+  background-color: #68AFFF;
   border: 3px solid white;
-  box-shadow: 1px 1px 1px 1px;
+  outline: none;
+  box-shadow: 2px 2px 2px 2px;
   visibility: visible;
   -webkit-transition: visibility 2s;
   -webkit-transition-delay: 1s;
@@ -99,23 +104,25 @@
   list-style: none;
   flex-direction: row;
   margin-left: -60px;
+ /* overflow-x: auto;
+  overflow-y: hidden;*/
 }
 
 .beforePortPage ul img {
-  border: 1px solid black;
   height: 300px;
   width: 300px;
   border-radius: 10px;
   margin: 0px 20px 0px;
+  -webkit-box-shadow:  0 1px 5px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   -webkit-transition: height 2s, width 2s, margin 2s;
 }
 
 .afterPortPage ul img {
-  border: 1px solid black;
   height: 300px;
   width: 300px;
   border-radius: 10px;
   margin: 0px 20px 0px;
+  -webkit-box-shadow:  0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   -webkit-transition: height 2s, width 2s, margin 2s;
   -webkit-transition-delay: 1s;
 }
@@ -158,6 +165,6 @@
 }
 
 .hvr-back-pulse h1 {
-  margin: 100px auto;
+  margin: 120px auto;
   font-size: 30px;
 }

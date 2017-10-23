@@ -9,7 +9,7 @@
 .beforeLogo img {
   display: inline-block;
   position: relative;
-  margin: 0px 30px 130px 0px;
+  margin: 0px 50px 130px 0px;
   top: 225px;
   height: 200px;
   width: 200px;
@@ -22,7 +22,7 @@
 .afterLogo img {
   display: inline-block;
   position: relative;
-  margin: 0px 30px 130px 0px;
+  margin: 0px 50px 130px 0px;
   top: 125px;
   height: 150px;
   width: 150px;
@@ -117,7 +117,6 @@
 }
 
 .beforeClickMenu .categories ul img {
-  border: 1px solid black;
   height: 200px;
   width: 200px;
   border-radius: 180px;
@@ -127,7 +126,6 @@
 }
 
 .afterClickMenu .categories ul img {
-  border: 2px solid black;
   height: 200px;
   width: 200px;
   border-radius: 180px;
@@ -138,8 +136,8 @@
 }
 
 .afterClickMenu .categories ul img:hover {
-  height: 220px;
-  width: 220px;
+  height: 235px;
+  width: 235px;
   -webkit-transition: height 1s, width 1s;
 }
 

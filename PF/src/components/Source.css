@@ -4,7 +4,8 @@
   height: 0px;
   overflow-x: hidden;
   overflow-y: hidden;
-  background-color: #0CE857;
+  z-index: -1;
+  background-color: #11FFB5;
   -webkit-transition: height 2s, top 2s;
 }
 
@@ -14,7 +15,8 @@
   height: 150px;
   overflow-x: hidden;
   overflow-y: hidden;
-  background-color: #0CE857;
+  z-index: -1;
+  background-color: #11FFB5;
   -webkit-transition: height 2s, top 2s;
 }
 
@@ -33,16 +35,16 @@
   height: 0px;
   overflow-x: auto;
   overflow-y: hidden;
-  border-bottom: 0px solid #0CE857;
+  border-bottom: 0px solid #11FFB5;
   -webkit-transition: height 2s, border-bottom 2s;
   -webkit-transition-delay: border-bottom 2s;
 }
 
 .afterSourcePage {
-  height: 400px;
-  overflow-x: auto;
+  height: 450px;
+  overflow-x: hidden;
   overflow-y: hidden;
-  border-bottom: 3px solid #0CE857;
+  border-bottom: 3px solid #11FFB5;
   -webkit-transition: height 2s;
   -webkit-transition-delay: border-bottom 2s;
 }
@@ -54,9 +56,11 @@
   height: 30px;
   width: 60px;
   border-radius: 180px;
-  background-color: #0CE857;
+  background-color: #11FFB5;
   border: 3px solid white;
-  box-shadow: 1px 1px 1px 1px;
+  outline: none;
+  z-index: -1;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px;
   visibility: hidden;
   -webkit-transition: visibility 1s;
 }
@@ -69,9 +73,10 @@
   width: 60px;
   border-radius: 180px;
   visibility: visible;
-  background-color: #0CE857;
+  background-color: #11FFB5;
   border: 3px solid white;
-  box-shadow: 1px 1px 1px 1px;
+  outline: none;
+  box-shadow: 2px 2px 2px 2px;
   -webkit-transition: visibility 2s;
   -webkit-transition-delay: 1s;
 }
@@ -84,4 +89,91 @@
 .afterSourcePage .innerBlock {
   height: 400px;
   -webkit-transition: height 2s, visibility 2s;
+}
+
+.beforeSourcePage .innerBlock .left {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  float: left;
+  margin: -15px 0px 0px 25px;
+  height: 350px;
+  width: 600px;
+  text-align: center;
+}
+
+.afterSourcePage .innerBlock .left {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  float: left;
+  margin: 25px 0px 0px 50px;
+  height: 200px;
+  width: 500px;
+  text-align: center;
+}
+
+#sourcePic {
+  display: inline-block;
+  height: auto;
+  width: 500px;
+  border-radius: 5px;
+}
+
+.beforeMSourcePage .innerBlock .right {
+  position: relative;
+  float: right;
+  margin: 75px 50px 0px 0px;
+  height: 200px;
+  width: 800px;
+  border-left: 2px solid black;
+  text-align: center;
+}
+
+.afterSourcePage .innerBlock .right {
+  position: relative;
+  float: right;
+  margin: 50px 50px 0px 0px;
+  height: 250px;
+  width: 800px;
+  border-left: 2px solid black;
+  text-align: center;
+}
+
+.beforeSourcePage .innerBlock .right a {
+  text-decoration: none;
+}
+
+.afterSourcePage .innerBlock .right a {
+  text-decoration: none;
+}
+
+.beforeSourcePage .innerBlock .right ul {
+  list-style: none;
+  margin-right: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: 200;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: black;
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.afterSourcePage .innerBlock .right ul {
+  list-style: none;
+  margin-right: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: 200;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: black;
+  padding: 0px 20px;
+  text-align: center;
 }

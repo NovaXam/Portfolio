@@ -1,5 +1,9 @@
 import React from 'react';
 import logo from '../assets/pepsi.png';
+import about from '../assets/button_about.png';
+import works from '../assets/button_work.png';
+import read from '../assets/button_read.png';
+import contact from '../assets/button_contact.png';
 import './MainPage.css';
 
 const MainPage = (props) => {
@@ -14,10 +18,10 @@ const MainPage = (props) => {
         </div>
         <div className='categories'>
           <ul>
-            <li><img id="about" src={logo} style={props.scaleAbout} onClick={props.handlerAboutListener} /></li>
-            <li> <img src={logo} style={props.scalePortfolio} onClick={props.handlerPortfolioListener} /> </li>
-            <li> <img src={logo} style={props.scaleSource} onClick={props.handlerSourceListener} /> </li>
-            <li> <img src={logo} style={props.scaleResume} onClick={props.handlerResumeListener}/> </li>
+            <li><img id="about" src={about} style={props.scaleAbout} onClick={props.handlerAboutListener} /></li>
+            <li> <img src={works} style={props.scalePortfolio} onClick={props.handlerPortfolioListener} /> </li>
+            <li> <img src={read} style={props.scaleSource} onClick={props.handlerSourceListener} /> </li>
+            <li> <img src={contact} style={props.scaleResume} onClick={props.handlerResumeListener}/> </li>
           </ul>
         </div>
       </div>

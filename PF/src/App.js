@@ -37,6 +37,7 @@ class App extends Component {
       resumeLine: 'beforeResumeLine',
       resumePage: 'beforeResumePage',
       scaleAbout: {},
+      scaleAboutRed: {},
       scalePortfolio: {},
       scaleSource: {},
       scaleResume: {},
@@ -97,8 +98,8 @@ class App extends Component {
         aboutLine: 'afterAboutLine',
         aboutPage: 'afterAboutPage',
         scaleAbout: {
-          height: '225px',
-          width: '225px',
+          height: '250px',
+          width: '250px',
         },
       });
       const domScroll = Scroll.animateScroll.scrollTo(document.body.scrollHeight);
@@ -115,8 +116,8 @@ class App extends Component {
         portLine: 'afterPortLine',
         portPage: 'afterPortPage',
         scalePortfolio: {
-          height: '225px',
-          width: '225px',
+          height: '250px',
+          width: '250px',
         },
       });
       const domScroll = Scroll.animateScroll.scrollTo(document.body.scrollHeight,
@@ -168,7 +169,7 @@ class App extends Component {
           backgroundColor: 'rgba(32,152,209,0.8)',
         },
       });
-      const domScroll = Scroll.animateScroll.scrollTo(1100, { smooth: true });
+      const domScroll = Scroll.animateScroll.scrollTo(1250, { smooth: true });
     } catch(err) {
       console.log(err);
     }
@@ -197,8 +198,8 @@ class App extends Component {
         sourceLine: 'afterSourceLine',
         sourcePage: 'afterSourcePage',
         scaleSource: {
-          height: '225px',
-          width: '225px',
+          height: '250px',
+          width: '250px',
         },
       });
       const domScroll = Scroll.animateScroll.scrollTo(1150, { smooth: true });
@@ -214,8 +215,8 @@ class App extends Component {
         resumeLine: 'afterResumeLine',
         resumePage: 'afterResumePage',
         scaleResume: {
-          height: '225px',
-          width: '225px',
+          height: '250px',
+          width: '250px',
         },
       });
       const domScroll = Scroll.animateScroll.scrollTo(1150, { smooth: true });
@@ -230,6 +231,7 @@ class App extends Component {
       aboutPage: 'beforeAboutPage',
       aboutLine: 'beforeAboutLine',
       scaleAbout: {},
+      scaleAboutRed: {},
     });
   }
 
@@ -304,6 +306,7 @@ class App extends Component {
           logoMain={this.state.logoMain}
           top={this.state.top}
           scaleAbout={this.state.scaleAbout}
+          scaleAboutRed={this.state.scaleAboutRed}
           scalePortfolio={this.state.scalePortfolio}
           scaleSource={this.state.scaleSource}
           scaleResume={this.state.scaleResume}
