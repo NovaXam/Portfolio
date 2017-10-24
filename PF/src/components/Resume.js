@@ -1,5 +1,6 @@
 import React from 'react';
 import './Resume.css';
+import buttonInfo from '../assets/buttonInfo.png';
 
 const Resume = (props) => {
   return (
@@ -8,7 +9,7 @@ const Resume = (props) => {
         <p>CONTACT</p>
       </div>
       <div className={props.resumePage}>
-        <button id='about' onClick={props.handleResumeListenerRollBack}>&#8679;</button>
+        <img id='info' src={buttonInfo} onClick={props.handleResumeListenerRollBack} />
         <div className="innerBlock">
           <h1>INFO </h1>
           <p>Data </p>

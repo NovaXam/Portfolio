@@ -43,15 +43,13 @@
   -webkit-transition-delay: border-bottom 2s;
 }
 
-.beforeMonsterPage button {
+.beforeMonsterPage #monster {
   display: inline-block;
   position: relative;
   margin: 15px auto;
-  height: 30px;
-  width: 60px;
+  height: 45px;
+  width: 45px;
   border-radius: 180px;
-  background-color: #68AFFF;
-  border: 3px solid white;
   outline: none;
   z-index: -1;
   box-shadow: 0.5px 0.5px 0.5px 0.5px;
@@ -59,16 +57,14 @@
   -webkit-transition: visibility 1s;
 }
 
-.afterMonsterPage button {
+.afterMonsterPage #monster {
   display: inline-block;
   position: relative;
   margin: 15px auto;
-  height: 30px;
-  width: 60px;
+  height: 45px;
+  width: 45px;
   border-radius: 180px;
   visibility: visible;
-  background-color: #68AFFF;
-  border: 3px solid white;
   outline: none;
   box-shadow: 2px 2px 2px 2px;
   -webkit-transition: visibility 2s;
@@ -129,33 +125,47 @@
   display: inline-flex;
   flex-direction: row;
   position: relative;
-  height: 50px;
+  height: 80px;
   text-align: center;
-  margin: -7px auto 0px;
+  margin: 0px auto 0px;
 }
 
 .afterMonsterPage .innerBlock .left .icons {
   display: inline-flex;
   flex-direction: row;
   position: relative;
-  /*border: 1px solid blue;*/
-  height: 50px;
+  height: 80px;
+  width: 200px;
   text-align: center;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
-#iconGit {
+.beforeMonsterPage #iconGit {
   display: inline-block;
-  height: 35px;
+  height: 50px;
   width: auto;
-  margin: 15px 30px;
+  margin: 10px 20px;
 }
 
-#iconHer {
+.beforeMonsterPage #iconHer {
   display: inline-block;
-  height: 35px;
+  height: 50px;
   width: auto;
-  margin: 15px 30px;
+  margin: 10px 20px;
+}
+
+.afterMonsterPage #iconGit {
+  display: inline-block;
+  height: 50px;
+  width: auto;
+  margin: 0px 30px;
+}
+
+.afterMonsterPage #iconHer {
+  display: inline-block;
+  height: 50px;
+  width: auto;
+  margin: 0px 10px;
 }
 
 .beforeMonsterPage .innerBlock .right {

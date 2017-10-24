@@ -49,15 +49,13 @@
   -webkit-transition-delay: border-bottom 2s;
 }
 
-.beforeResumePage button {
+.beforeResumePage #info {
   display: inline-block;
   position: relative;
   margin: 0px auto;
-  height: 30px;
-  width: 60px;
+  height: 45px;
+  width: 45px;
   border-radius: 180px;
-  background-color: #FFFF67;
-  border: 3px solid white;
   outline: none;
   z-index: -1;
   box-shadow: 0.5px 0.5px 0.5px 0.5px;
@@ -65,16 +63,14 @@
   -webkit-transition: visibility 1s;
 }
 
-.afterResumePage button {
+.afterResumePage #info {
   display: inline-block;
   margin: 0px auto;
   position: relative;
-  height: 30px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   border-radius: 180px;
   visibility: visible;
-  background-color: #FFFF67;
-  border: 3px solid white;
   outline: none;
   box-shadow: 2px 2px 2px 2px;
   -webkit-transition: visibility 2s;

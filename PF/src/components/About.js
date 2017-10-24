@@ -1,5 +1,7 @@
 import React from 'react';
 import './About.css';
+import buttonAbout from '../assets/buttonAbout.png';
+import me from '../assets/Icons/photo.png';
 
 const About = (props) => {
   return (
@@ -8,10 +10,23 @@ const About = (props) => {
         <p>ABOUT</p>
       </div>
       <div className={props.aboutPage}>
-        <button id="about" onClick={props.handleAboutListenerRollBack}>&#8679;</button>
+        <img id="about" src={buttonAbout} onClick={props.handleAboutListenerRollBack} />
         <div className="innerBlock">
-            <h1>About</h1>
-            <p>Full stack software developer </p>
+          <div className="left">
+            <p>Hi! My name is maksym and it's all about software development and
+               little bit of design.
+               I like front-end but a back-end my true inspiration.
+               This site was built to get you aquainted with some of my projects,
+            </p>
+          </div>
+          <img id="photo" src={me} />
+          <div className="right">
+            <p>my personality and of course to help us collaborate.
+               I tried to make design pretty friendly so it would be easy to find all
+               interesting you information.
+               Have a good exploration of my space and may force be with you...
+            </p>
+          </div>
         </div>
       </div>
     </div>

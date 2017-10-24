@@ -2,6 +2,9 @@ import React from 'react';
 import './Surfer.css';
 import Surferpage from '../assets/Portfolio/Surfer_page.png';
 import iconGit from '../assets/arrows.png';
+import buttonSerf from '../assets/buttonFolio.png';
+import iconsGit from '../assets/Icons/iconsGH.png';
+import iconsHeroku from '../assets/Icons/iconsHeroku.png';
 
 const Surfer = (props) => {
   return (
@@ -10,13 +13,13 @@ const Surfer = (props) => {
         <p>S-SURFER</p>
       </div>
       <div className={props.portSurferPage}>
-        <button id='surfer' onClick={props.handlePortSurfListenerRollBack}>&#8679;</button>
+        <img id='surfer' src={buttonSerf} onClick={props.handlePortSurfListenerRollBack} />
         <div className="innerBlock">
           <div className="left">
               <div className="mainPic"><img id='SurfPicture' src={Surferpage} /></div>
               <div className="icons">
-                <a href="https://github.com/NovaXam" target="blank"><img id="iconGit" src={iconGit} /></a>
-                <a href=""><img id="iconHer" src={iconGit} /></a>
+                <a href="https://git.generalassemb.ly/NovaXam/project-2-express/tree/master/production" target="blank"><img id="iconGit" src={iconsGit} /></a>
+                <a href="#"><img id="iconHer" src={iconsHeroku} /></a>
               </div>
             </div>
             <div className="right">

@@ -42,7 +42,7 @@
 .afterPortPage {
   display: inline-flex;
   flex-direction: column;
-  height: 400px;
+  height: 450px;
   width: 1500px;
   overflow-x: auto;
   overflow-y: hidden;
@@ -52,16 +52,14 @@
   -webkit-transition-delay: border-bottom 2s;
 }
 
-.beforePortPage button {
+.beforePortPage #portfolio {
   display: inline-block;
   position: relative;
   margin: 15px auto;
   left: -30px;
-  height: 30px;
-  width: 60px;
+  height: 45px;
+  width: 45px;
   border-radius: 180px;
-  background-color: #68AFFF;
-  border: 3px solid white;
   outline: none;
   z-index: -1;
   box-shadow: 0.5px 0.5px 0.5px 0.5px;
@@ -69,16 +67,14 @@
   -webkit-transition: visibility 1s;
 }
 
-.afterPortPage button {
+.afterPortPage #portfolio {
   display: inline-block;
   position: relative;
   margin: 15px auto;
   left: -30px;
-  height: 30px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   border-radius: 180px;
-  background-color: #68AFFF;
-  border: 3px solid white;
   outline: none;
   box-shadow: 2px 2px 2px 2px;
   visibility: visible;

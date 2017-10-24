@@ -2,6 +2,9 @@ import React from 'react';
 import './Guess.css';
 import Guesspage from '../assets/Portfolio/Guess_page.png';
 import iconGit from '../assets/arrows.png';
+import buttonFolio from '../assets/buttonFolio.png';
+import iconsGit from '../assets/Icons/iconsGH.png';
+import iconsHeroku from '../assets/Icons/iconsHeroku.png';
 
 const Guess = (props) => {
   return (
@@ -10,13 +13,13 @@ const Guess = (props) => {
           <p>GUESS</p>
         </div>
         <div className={props.portGuessPage}>
-          <button id='guess' onClick={props.handlePortGuessListenerRollBack}>&#8679;</button>
+          <img id='guess' src={buttonFolio} onClick={props.handlePortGuessListenerRollBack} />
           <div className="innerBlock">
             <div className="left">
               <div className="mainPic"><img id='GuPicture' src={Guesspage} /></div>
               <div className="icons">
-                <a href="https://github.com/NovaXam" target="blank"><img id="iconGit" src={iconGit} /></a>
-                <a href=""><img id="iconHer" src={iconGit} /></a>
+                <a href="https://github.com/NovaXam/Project_1_GuessAndGo" target="blank"><img id="iconGit" src={iconsGit} /></a>
+                <a href="#"><img id="iconHer" src={iconsHeroku} /></a>
               </div>
             </div>
             <div className="right">

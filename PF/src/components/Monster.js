@@ -2,6 +2,9 @@ import React from 'react';
 import './Monster.css';
 import Monsterpage from '../assets/Portfolio/Monster_page.png';
 import iconGit from '../assets/arrows.png';
+import buttonMonster from '../assets/buttonFolio.png';
+import iconsGit from '../assets/Icons/iconsGH.png';
+import iconsHeroku from '../assets/Icons/iconsHeroku.png';
 
 const Monster = (props) => {
   return (
@@ -10,13 +13,13 @@ const Monster = (props) => {
         <p>M-MONSTER</p>
         </div>
         <div className={props.portMonsterPage}>
-          <button id='monster' onClick={props.handlePortMonListenerRollBack}><b>&#8679;</b></button>
+          <img id='monster' src={buttonMonster} onClick={props.handlePortMonListenerRollBack} />
           <div className="innerBlock">
             <div className="left">
               <div className="mainPic"><img id='mmPicture' src={Monsterpage} /></div>
               <div className="icons">
-                <a href="https://github.com/NovaXam" target="blank"><img id="iconGit" src={iconGit} /></a>
-                <a href=""><img id="iconHer" src={iconGit} /></a>
+                <a href="https://github.com/MistyMen/musicMonster" target="blank"><img id="iconGit" src={iconsGit} /></a>
+                <a href="https://musicmonster.herokuapp.com/" target="blank"><img id="iconHer" src={iconsHeroku} /></a>
               </div>
             </div>
             <div className="right">

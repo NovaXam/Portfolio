@@ -44,15 +44,13 @@
 
 }
 
-.beforeAboutPage button {
+.beforeAboutPage img {
   display: inline-block;
   position: relative;
   margin: 15px auto;
-  height: 30px;
-  width: 60px;
+  height: 45px;
+  width: 45px;
   border-radius: 180px;
-  background-color: #FF5543;
-  border: 3px solid white;
   outline: none;
   z-index: -1;
   box-shadow: 0.5px 0.5px 0.5px 0.5px;
@@ -60,16 +58,14 @@
   -webkit-transition: visibility 1s;
 }
 
-.afterAboutPage button {
+.afterAboutPage img {
   display: inline-block;
   margin: 15px auto;
   position: relative;
-  height: 30px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   border-radius: 180px;
   visibility: visible;
-  background-color: #FF5543;
-  border: 3px solid white;
   outline: none;
   box-shadow: 2px 2px 2px 2px;
   -webkit-transition: visibility 2s;
@@ -77,11 +73,116 @@
 }
 
 .beforeAboutPage .innerBlock {
+  margin-top: 30px;
   height: 0px;
   -webkit-transition: height 2s, visibility 2s;
 }
 
 .afterAboutPage .innerBlock {
+  margin-top: 30px;
   height: 400px;
   -webkit-transition: height 2s, visibility 2s;
 }
+
+.beforeAboutPage .innerBlock #photo {
+  display: inline-block;
+  position: relative;
+  height: 150px;
+  width: auto;
+  float: right;
+  left: -640px;
+}
+
+.afterAboutPage .innerBlock #photo {
+  display: inline-block;
+  position: relative;
+  height: 150px;
+  width: auto;
+  float: right;
+  left: -640px;
+}
+
+.beforeAboutPage .innerBlock .left {
+  position: relative;
+  float: left;
+  height: 300px;
+  width: 600px;
+  margin-left: 35px;
+}
+
+.afterAboutPage .innerBlock .left {
+  position: relative;
+  float: left;
+  height: 300px;
+  width: 600px;
+  /*border: 1px solid red;*/
+  margin-left: 35px;
+}
+
+.beforeAboutPage .innerBlock .right {
+  position: relative;
+  height: 300px;
+  width: 570px;
+  /*border: 1px solid red;*/
+  margin-right: -85px;
+  float: right;
+}
+
+.afterAboutPage .innerBlock .right {
+  position: relative;
+  height: 300px;
+  width: 570px;
+  /*border: 1px solid red;*/
+  margin-right: -85px;
+  float: right;
+}
+
+.beforeAboutPage .innerBlock .left p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: 200;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: black;
+  padding: 0px 20px;
+}
+
+.afterAboutPage .innerBlock .left p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: 200;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: black;
+  padding: 0px 20px;
+}
+
+.beforeAboutPage .innerBlock .right p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: 200;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: black;
+  padding: 0px 20px;
+}
+
+.afterAboutPage .innerBlock .right p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: 200;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: black;
+  padding: 0px 20px;
+}
+
+

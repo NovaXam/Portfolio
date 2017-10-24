@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/pepsi.png';
+import logo from '../assets/Icons/logo.png';
 import about from '../assets/button_about.png';
 import works from '../assets/button_work.png';
 import read from '../assets/button_read.png';

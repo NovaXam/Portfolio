@@ -49,15 +49,13 @@
   -webkit-transition-delay: border-bottom 2s;
 }
 
-.beforeSourcePage button {
+.beforeSourcePage #source {
   display: inline-block;
   position: relative;
   margin: 0px auto;
-  height: 30px;
-  width: 60px;
+  height: 45px;
+  width: 45px;
   border-radius: 180px;
-  background-color: #11FFB5;
-  border: 3px solid white;
   outline: none;
   z-index: -1;
   box-shadow: 0.5px 0.5px 0.5px 0.5px;
@@ -65,16 +63,14 @@
   -webkit-transition: visibility 1s;
 }
 
-.afterSourcePage button {
+.afterSourcePage #source {
   display: inline-block;
   margin: 0px auto;
   position: relative;
-  height: 30px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   border-radius: 180px;
   visibility: visible;
-  background-color: #11FFB5;
-  border: 3px solid white;
   outline: none;
   box-shadow: 2px 2px 2px 2px;
   -webkit-transition: visibility 2s;
@@ -94,9 +90,9 @@
 .beforeSourcePage .innerBlock .left {
   display: inline-flex;
   flex-direction: column;
-  position: relative;
+  /*position: relative;*/
   float: left;
-  margin: -15px 0px 0px 25px;
+  margin: 25px 0px 0px 50px;
   height: 350px;
   width: 600px;
   text-align: center;
@@ -105,7 +101,7 @@
 .afterSourcePage .innerBlock .left {
   display: inline-flex;
   flex-direction: column;
-  position: relative;
+  /*position: relative;*/
   float: left;
   margin: 25px 0px 0px 50px;
   height: 200px;
@@ -120,18 +116,18 @@
   border-radius: 5px;
 }
 
-.beforeMSourcePage .innerBlock .right {
-  position: relative;
+.beforeSourcePage .innerBlock .right {
+  /*position: relative;*/
   float: right;
-  margin: 75px 50px 0px 0px;
-  height: 200px;
+  margin: -325px 50px 0px 0px;
+  height: 250px;
   width: 800px;
   border-left: 2px solid black;
   text-align: center;
 }
 
 .afterSourcePage .innerBlock .right {
-  position: relative;
+  /*position: relative;*/
   float: right;
   margin: 50px 50px 0px 0px;
   height: 250px;

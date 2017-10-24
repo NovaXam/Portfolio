@@ -5,6 +5,7 @@ import MonsterTitle from '../assets/Portfolio/Monster_title.png';
 import GuessTitle from '../assets/Portfolio/Guess_title.png';
 import SurferTitle from '../assets/Portfolio/Surfer_title.png';
 import MarsTitle from '../assets/Portfolio/Mars_title.png';
+import buttonFolio from '../assets/buttonFolio.png';
 import './Portfolio.css';
 
 const Portfolio = (props) => {
@@ -15,7 +16,7 @@ const Portfolio = (props) => {
         <p>PORTFOLIO</p>
       </div>
       <div className={props.portPage}>
-        <button id="portfolio" onClick={props.handlePortfolioListenerRollBack}><b>&#8679;</b></button>
+        <img id="portfolio" src={buttonFolio} onClick={props.handlePortfolioListenerRollBack} />
         <ul>
           <li onClick={props.handlerPortGuessListener}>
             <img id="Guess" alt="" src={GuessTitle} />

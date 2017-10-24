@@ -2,6 +2,9 @@ import React from 'react';
 import './MissionX.css';
 import MissionXpage from '../assets/Portfolio/Mars_page.png';
 import iconGit from '../assets/arrows.png';
+import buttonMissionX from '../assets/buttonFolio.png';
+import iconsGit from '../assets/Icons/iconsGH.png';
+import iconsHeroku from '../assets/Icons/iconsHeroku.png';
 
 const MissionX = (props) => {
   return (
@@ -10,13 +13,13 @@ const MissionX = (props) => {
         <p>MISSION-X</p>
       </div>
       <div className={props.portMissionXPage}>
-        <button id='missionX' onClick={props.handlePortMissListenerRollBack}>&#8679;</button>
+        <img id='missionX' src={buttonMissionX} onClick={props.handlePortMissListenerRollBack} />
         <div className="innerBlock">
           <div className="left">
               <div className="mainPic"><img id='MissPicture' src={MissionXpage} /></div>
               <div className="icons">
-                <a href="https://github.com/NovaXam" target="blank"><img id="iconGit" src={iconGit} /></a>
-                <a href=""><img id="iconHer" src={iconGit} /></a>
+                <a href="https://github.com/NovaXam/MissionX" target="blank"><img id="iconGit" src={iconsGit} /></a>
+                <a href="#"><img id="iconHer" src={iconsHeroku} /></a>
               </div>
             </div>
             <div className="right">
