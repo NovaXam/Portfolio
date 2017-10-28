@@ -46,6 +46,26 @@ class App extends Component {
       workPointerSurf: {},
       workPointerMon: {},
       workPointerMiss: {},
+      height: {height: '0px'},
+      heightAbout: {
+        height: '0px',
+        marginBottom: '0px'},
+      heightGuess: {
+        height: '0px',
+        transition: 'height 2s',
+      },
+      heightSurfer: {
+        height: '0px',
+        transition: 'height 2s',
+      },
+      heightMonster: {
+        height: '0px',
+        transition: 'height 2s',
+        },
+      heightMissionX: {
+        height: '0px',
+        transition: 'height 2s',
+      },
     };
 
     this.handleMainListener = this.handleMainListener.bind(this);
@@ -101,8 +121,13 @@ class App extends Component {
           height: '250px',
           width: '250px',
         },
+        heightAbout: {
+          height: '500px',
+          marginBottom: '57px',
+          transition: 'height 2s, margin-bottom 2s',
+        },
       });
-      const domScroll = Scroll.animateScroll.scrollTo(document.body.scrollHeight);
+      const domScroll = Scroll.animateScroll.scrollTo(document.body.scrollHeight - 300);
     } catch(err) {
       console.log(err);
     }
@@ -119,8 +144,12 @@ class App extends Component {
           height: '250px',
           width: '250px',
         },
+        height: {
+          height: '600px',
+          transition: 'height 2s',
+        },
       });
-      const domScroll = Scroll.animateScroll.scrollTo(document.body.scrollHeight,
+      const domScroll = Scroll.animateScroll.scrollTo(600,
         {smooth: true});
     } catch(err) {
       console.log(err);
@@ -136,8 +165,12 @@ class App extends Component {
       workPointerGuess: {
         backgroundColor: 'rgba(32,152,209,0.8)',
       },
+      heightGuess: {
+        height: '675px',
+        transition: 'height 2s',
+      }
     });
-    const domScroll = Scroll.animateScroll.scrollTo(1100, { smooth: true });
+    const domScroll = Scroll.animateScroll.scrollTo(1350, { smooth: true });
     } catch(err) {
       console.log(err);
     }
@@ -152,8 +185,12 @@ class App extends Component {
         workPointerSurf: {
           backgroundColor: 'rgba(32,152,209,0.8)',
         },
+        heightSurfer: {
+          height: '675px',
+          transition: 'height 2s',
+        },
       });
-      const domScroll = Scroll.animateScroll.scrollTo(1100, { smooth: true });
+      const domScroll = Scroll.animateScroll.scrollTo(1350, { smooth: true });
     } catch(err) {
       console.log(err);
     }
@@ -168,8 +205,12 @@ class App extends Component {
         workPointerMon: {
           backgroundColor: 'rgba(32,152,209,0.8)',
         },
+        heightMonster: {
+          height: '675px',
+          transition: 'height 2s',
+        },
       });
-      const domScroll = Scroll.animateScroll.scrollTo(1250, { smooth: true });
+      const domScroll = Scroll.animateScroll.scrollTo(1350, { smooth: true });
     } catch(err) {
       console.log(err);
     }
@@ -184,8 +225,12 @@ class App extends Component {
         workPointerMiss: {
           backgroundColor: 'rgba(32,152,209,0.8)',
         },
+        heightMissionX: {
+          height: '675px',
+          transition: 'height 2s',
+        },
       });
-      const domScroll = Scroll.animateScroll.scrollTo(1150, { smooth: true });
+      const domScroll = Scroll.animateScroll.scrollTo(1350, { smooth: true });
     } catch (err) {
       console.log(err);
     }
@@ -232,6 +277,11 @@ class App extends Component {
       aboutLine: 'beforeAboutLine',
       scaleAbout: {},
       scaleAboutRed: {},
+      heightAbout: {
+          height: '0px',
+          marginBottom: '0px',
+          transition: 'height 2s, margin-bottom 2s',
+        },
     });
   }
 
@@ -241,6 +291,10 @@ class App extends Component {
       portLine: 'beforePortLine',
       portPage: 'beforePortPage',
       scalePortfolio: {},
+      height: {
+        height : '0px',
+        transition: 'height 2s',
+      },
     });
   }
 
@@ -250,6 +304,10 @@ class App extends Component {
       portGuessLine: 'beforeGuessLine',
       portGuessPage: 'beforeGuessPage',
       workPointerGuess: {},
+      heightGuess: {
+        height: '0px',
+        transition: 'height 2s',
+      },
     });
   }
 
@@ -259,6 +317,10 @@ class App extends Component {
       portSurferLine: 'beforeSurferLine',
       portSurferPage: 'beforeSurferPage',
       workPointerSurf: {},
+      heightSurfer: {
+        height: '0px',
+        transition: 'height 2s',
+      },
     });
   }
 
@@ -268,6 +330,10 @@ class App extends Component {
       portMonsterLine: 'beforeMonsterLine',
       portMonsterPage: 'beforeMonsterPage',
       workPointerMon: {},
+      heightMonster: {
+        height: '0px',
+        transition: 'height 2s',
+      },
     });
   }
 
@@ -277,6 +343,10 @@ class App extends Component {
       portMissionXLine: 'beforeMissionXLine',
       portMissionXPage: 'beforeMissionXPage',
       workPointerMiss: {},
+      heightMissionX: {
+        height: '0px',
+        transition: 'height 2s',
+      },
     });
   }
 
@@ -319,9 +389,11 @@ class App extends Component {
         <About
           aboutLine={this.state.aboutLine}
           aboutPage={this.state.aboutPage}
+          heightAbout={this.state.heightAbout}
           handleAboutListenerRollBack={this.handleAboutListenerRollBack}
         />
         <Portfolio
+          height={this.state.height}
           portLine={this.state.portLine}
           portPage={this.state.portPage}
           workPointerGuess={this.state.workPointerGuess}
@@ -338,21 +410,25 @@ class App extends Component {
         <Guess
           portGuessLine={this.state.portGuessLine}
           portGuessPage={this.state.portGuessPage}
+          heightGuess={this.state.heightGuess}
           handlePortGuessListenerRollBack={this.handlePortGuessListenerRollBack}
         />
         <Surfer
           portSurferLine={this.state.portSurferLine}
           portSurferPage={this.state.portSurferPage}
+          heightSurfer={this.state.heightSurfer}
           handlePortSurfListenerRollBack={this.handlePortSurfListenerRollBack}
         />
         <Monster
           portMonsterLine={this.state.portMonsterLine}
           portMonsterPage={this.state.portMonsterPage}
+          heightMonster={this.state.heightMonster}
           handlePortMonListenerRollBack={this.handlePortMonListenerRollBack}
         />
         <MissionX
           portMissionXLine={this.state.portMissionXLine}
           portMissionXPage={this.state.portMissionXPage}
+          heightMissionX={this.state.heightMissionX}
           handlePortMissListenerRollBack={this.handlePortMissListenerRollBack}
         />
         <Source

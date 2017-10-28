@@ -8,7 +8,7 @@ import iconsHeroku from '../assets/Icons/iconsHeroku.png';
 
 const MissionX = (props) => {
   return (
-    <div className="portMissMainBlock">
+    <div className="portMissMainBlock" style={props.heightMissionX}>
       <div className={props.portMissionXLine}>
         <p>MISSION-X</p>
       </div>
@@ -25,9 +25,9 @@ const MissionX = (props) => {
             <div className="right">
               <div className="descript">
                 <h1>DESCRIPTION</h1>
-                <p>Mission X has an educational purpose and allows users get known about NASA’s space
-                   missions on Mars and to explore this planet by pictures getting from rovers fulfilling
-                   a scientific mission on Mars starting from 2006 till nowadays. Moreover, MissionX gives
+                <p>Mission X has an educational purpose and allows users to find out about NASA’s space
+                   missions on Mars. You can explore this planet using pictures from Rovers fulfilling
+                   a scientific mission on Mars starting from 2006 till present. Moreover, MissionX gives
                    users an opportunity to look up not only the past but the future of the Mars’s exploration.
                 </p>
               </div>

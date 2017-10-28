@@ -8,7 +8,7 @@ import iconsHeroku from '../assets/Icons/iconsHeroku.png';
 
 const Guess = (props) => {
   return (
-      <div className="portGuessMainBlock">
+      <div className="portGuessMainBlock" style={props.heightGuess}>
         <div className={props.portGuessLine}>
           <p>GUESS</p>
         </div>
@@ -25,15 +25,15 @@ const Guess = (props) => {
             <div className="right">
               <div className="descript">
                 <h1>DESCRIPTION</h1>
-                <p>Simple strategy one user game for every ages. The logic of the game is to guess
-                   behind what square the picture is hidden on the board. The game has four topics:
+                <p>Simple strategy one user game for any age. The goal of the game is to match
+                   the square with the hidden picture behind it. The game has four topics:
                    Mario, Star Wars, Animals and SuperHeros. For each right click user gets points.
-                   The goal of the game is to guess 8 squares for the limited time and attempts.
+                   The win condition is to guess 8 squares within the limited time and number of attempts.
                 </p>
               </div>
               <div className="tech">
                 <h1>TECHNOLOGIES</h1>
-                <p>Html5, Css3, Javascript(ES6), GitHub</p>
+                <p>Html5, Css3, Javascript(ES6), GitHub, Charts</p>
               </div>
             </div>
           </div>

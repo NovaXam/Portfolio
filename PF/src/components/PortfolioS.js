@@ -1,6 +1,5 @@
 import React from 'react';
 import HorizontalScroll from 'react-scroll-horizontal';
-import logo from '../assets/pepsi.png';
 import MonsterTitle from '../assets/Portfolio/Monster_title.png';
 import GuessTitle from '../assets/Portfolio/Guess_title.png';
 import SurferTitle from '../assets/Portfolio/Surfer_title.png';
@@ -9,11 +8,10 @@ import buttonFolio from '../assets/buttonFolio.png';
 import './Portfolio.css';
 
 const Portfolio = (props) => {
-  console.log(props.workPointer);
   return (
-    <div className="portMainBlock">
+    <div className="portMainBlock" style={props.height}>
       <div className={props.portLine}>
-        <p>PORTFOLIO</p>
+        <p>WORKS</p>
       </div>
       <div className={props.portPage}>
         <img id="portfolio" src={buttonFolio} onClick={props.handlePortfolioListenerRollBack} />

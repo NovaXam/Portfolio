@@ -1,10 +1,10 @@
 .beforePortLine {
   height: 0px;
-  width: 1500px;
+  width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
   background-color: #68AFFF;
-  -webkit-transition: height 2s
+  -webkit-transition: height 2s;
 }
 
 .portMainBlock p {
@@ -19,7 +19,7 @@
 
 .afterPortLine {
   height: 150px;
-  width: 1500px;
+  width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
   background-color: #68AFFF;
@@ -30,8 +30,8 @@
   display: inline-flex;
   flex-direction: column;
   height: 0px;
-  width: 1500px;
-  overflow-x: auto;
+  width: 100%;
+  overflow-x: hidden;
   overflow-y: hidden;
   white-space: nowrap;
   border-bottom: 0px solid #68AFFF;
@@ -42,25 +42,25 @@
 .afterPortPage {
   display: inline-flex;
   flex-direction: column;
+  margin: 0 auto;
   height: 450px;
-  width: 1500px;
-  overflow-x: auto;
+  width: 100%;
+  overflow-x: hidden;
   overflow-y: hidden;
   white-space: nowrap;
   border-bottom: 3px solid #68AFFF;
   -webkit-transition: height 2s;
   -webkit-transition-delay: border-bottom 2s;
+
 }
 
 .beforePortPage #portfolio {
   display: inline-block;
   position: relative;
   margin: 15px auto;
-  left: -30px;
   height: 45px;
   width: 45px;
   border-radius: 180px;
-  outline: none;
   z-index: -1;
   box-shadow: 0.5px 0.5px 0.5px 0.5px;
   visibility: hidden;
@@ -71,11 +71,9 @@
   display: inline-block;
   position: relative;
   margin: 15px auto;
-  left: -30px;
   height: 50px;
   width: 50px;
   border-radius: 180px;
-  outline: none;
   box-shadow: 2px 2px 2px 2px;
   visibility: visible;
   -webkit-transition: visibility 2s;
@@ -85,23 +83,24 @@
 .beforePortPage ul li {
   height: 300px;
   width: 300px;
-  margin: 0px 30px 0px;
   z-index: 1;
 }
 
 .afterPortPage ul li {
   height: 300px;
   width: 300px;
-  margin: 0px 30px 0px;
+  z-index: 1;
 }
 
 .portMainBlock ul {
   display: inline-flex;
+  position: relative;
   list-style: none;
   flex-direction: row;
-  margin-left: -60px;
- /* overflow-x: auto;
-  overflow-y: hidden;*/
+  justify-content: space-around;
+  padding: 0px;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .beforePortPage ul img {

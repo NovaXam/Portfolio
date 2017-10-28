@@ -1,17 +1,27 @@
 .beforeMissionXLine {
   height: 0px;
+  width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
   background-color: #68AFFF;
   -webkit-transition: height 2s;
 }
 
-.portMissMainBlock p {
+.beforeMissionXLine p {
   font-size: 150px;
   font-family: 'helvetica';
   color: white;
-  letter-spacing: 45px;
-  padding: 0px 0px 0px 80px;
+  letter-spacing: 40px;
+  margin: 30px auto;
+  font-weight: 600;
+  color: white;
+}
+
+.afterMissionXLine p {
+  font-size: 150px;
+  font-family: 'helvetica';
+  color: white;
+  letter-spacing: 40px;
   margin: 30px auto;
   font-weight: 600;
   color: white;
@@ -19,6 +29,7 @@
 
 .afterMissionXLine {
   height: 150px;
+  width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
   background-color: #68AFFF;
@@ -26,7 +37,10 @@
 }
 
 .beforeMissionXPage {
+  display: inline-flex;
+  flex-direction: column;
   height: 0px;
+  width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
   border-bottom: 0px solid #68AFFF;
@@ -35,7 +49,10 @@
 }
 
 .afterMissionXPage {
-  height: 500px;
+  display: inline-flex;
+  flex-direction: column;
+  height: 525px;
+  width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
   border-bottom: 3px solid #68AFFF;
@@ -72,13 +89,21 @@
 }
 
 .beforeMissionXPage .innerBlock {
+  display: inline-flex;
+  flex-direction: row;
   height: 0px;
-  margin-top: 30px;
+  margin-top: 15px;
+  width: 100%;
   -webkit-transition: height 2s, visibility 2s;
 }
 
 .afterMissionXPage .innerBlock {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 15px;
   height: 400px;
+  width: 100%;
   -webkit-transition: height 2s, visibility 2s;
 }
 
@@ -86,35 +111,29 @@
   display: inline-flex;
   flex-direction: column;
   position: relative;
-  float: left;
-  margin: -15px 0px 0px 25px;
+  margin-top: 15px;
   height: 400px;
-  width: 600px;
-  text-align: center;
+  width: 100%;
+  -webkit-transition: margin-top 2s;
 }
 
 .afterMissionXPage .innerBlock .left {
   display: inline-flex;
   flex-direction: column;
   position: relative;
-  float: left;
-  margin: 15px 0px 0px 25px;
+  margin-top: 15px;
   height: 400px;
-  width: 600px;
-  text-align: center;
-}
-
-.afterMissionXPage .innerBlock .left .mainPic {
-  position: relative;
-  height: 350px;
-  width: 600px;
+  width: 100%;
+  -webkit-transition: margin-top 2s;
 }
 
 #MissPicture {
   display: inline-block;
+  position: relative;
   height: auto;
   width: 525px;
   border-radius: 5px;
+  margin-bottom: 20px;
   -webkit-box-shadow:  0px 0px 10px 5px rgba(104, 175, 255, 0.3), 0 0 40px rgba(104, 175, 255, 0.3) inset;
 }
 
@@ -122,47 +141,47 @@
   display: inline-flex;
   flex-direction: row;
   position: relative;
-  height: 80px;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  width: 150px;
   text-align: center;
-  margin: 0px auto 0px;
+  margin: 10px auto 0px;
 }
 
 .afterMissionXPage .innerBlock .left .icons {
   display: inline-flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   position: relative;
-  height: 80px;
-  width: 200px;
-  text-align: center;
-  margin: 10px auto;
+  height: auto;
+  width: 150px;
+  margin: 10px auto 0px;
 }
 
 .beforeMissionXPage #iconGit {
   display: inline-block;
   height: 50px;
   width: auto;
-  margin: 10px 20px;
 }
 
-.beforeMissionXPage  #iconHer {
+.beforeMissionXPage #iconHer {
   display: inline-block;
   height: 50px;
   width: auto;
-  margin: 10px 20px;
 }
 
 .afterMissionXPage #iconGit {
   display: inline-block;
   height: 50px;
   width: auto;
-  margin: 0px 30px;
 }
 
-.afterMissionXPage  #iconHer {
+.afterMissionXPage #iconHer {
   display: inline-block;
   height: 50px;
   width: auto;
-  margin: 0px 10px;
 }
 
 .beforeMissionXPage .innerBlock .right {
@@ -170,9 +189,9 @@
   flex-direction: column;
   position: relative;
   float: right;
-  margin: 70px 50px 0px 0px;
+  margin: 100px 50px 0px 0px;
   height: 200px;
-  width: 700px;
+  width: 100%;
   border-left: 2px solid black;
   text-align: center;
 }
@@ -184,7 +203,7 @@
   float: right;
   margin: 100px 50px 0px 0px;
   height: 200px;
-  width: 700px;
+  width: 100%;
   border-left: 2px solid black;
   text-align: center;
 }
@@ -193,8 +212,8 @@
   display: inline-block;
   position: relative;
   height: 250px;
-  width: 650px;
-  margin: -100px 0px 0px 50px;
+  width: 100%;
+  margin: -100px 0px 0px 0px;
   text-align: center;
 }
 
@@ -202,9 +221,8 @@
   display: inline-block;
   position: relative;
   height: 250px;
-  width: 650px;
-  /*border: 1px solid blue;*/
-  margin: -100px 0px 0px 50px;
+  width: 100%;
+  margin: -100px 0px 0px 0px;
   text-align: center;
 }
 
@@ -245,18 +263,18 @@
 }
 
 .beforeMissionXPage .innerBlock .right .tech {
-  display: inline-block;
+  position: relative;
   height: 200px;
   width: 650px;
-  margin: 0px 0px 0px 50px;
+  margin: 0px 0px 0px 40px;
   border-top: 1px solid black;
 }
 
 .afterMissionXPage .innerBlock .right .tech {
-  display: inline-block;
+  position: relative;
   height: 200px;
   width: 650px;
-  margin: 0px 0px 0px 50px;
+  margin: 0px 0px 0px 40px;
   border-top: 1px solid black;
 }
 
@@ -281,8 +299,6 @@
   font-variant: small-caps;
   letter-spacing: 2px;
   text-align: center;
-  margin: 0px 80px 0px 0px;
-
 }
 
 .afterMissionXPage .innerBlock .right .tech p {
@@ -291,7 +307,4 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-variant: small-caps;
   letter-spacing: 2px;
-  text-align: center;
-  margin: 0px 80px 0px 0px;
 }
-

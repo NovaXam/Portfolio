@@ -1,32 +1,56 @@
+.aboutMainBlock {
+  margin-bottom: 57px;
+}
+
 .beforeAboutLine {
+  display: inline-block;
   height: 0px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
   overflow-x: hidden;
   overflow-y: hidden;
   background-color: #FF5543;
   -webkit-transition: height 2s;
 }
 
-.aboutMainBlock p {
+.afterAboutLine {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  height: 150px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #FF5543;
+  -webkit-transition: height 2s;
+}
+
+.beforeAboutLine p {
+  display: inline-block;
   font-size: 150px;
   font-family: 'helvetica';
   color: white;
   letter-spacing: 100px;
-  padding: 0px 0px 0px 80px;
   margin: 30px auto;
   font-weight: 600;
   color: white;
 }
 
-.afterAboutLine {
-  height: 150px;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  background-color: #FF5543;
-  -webkit-transition: height 2s;
+.afterAboutLine p {
+  display: inline-block;
+  font-size: 150px;
+  font-family: 'helvetica';
+  color: white;
+  letter-spacing: 100px;
+  margin: 30px auto;
+  font-weight: 600;
+  color: white;
 }
 
 .beforeAboutPage {
   height: 0px;
+  width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
   border-bottom: 0px solid #FF5543;
@@ -36,12 +60,12 @@
 
 .afterAboutPage {
   height: 400px;
+  width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
   border-bottom: 3px solid #FF5543;
   -webkit-transition: height 2s;
   -webkit-transition-delay: border-bottom 2s;
-
 }
 
 .beforeAboutPage img {
@@ -49,9 +73,8 @@
   position: relative;
   margin: 15px auto;
   height: 45px;
-  width: 45px;
+  width: auto;
   border-radius: 180px;
-  outline: none;
   z-index: -1;
   box-shadow: 0.5px 0.5px 0.5px 0.5px;
   visibility: hidden;
@@ -63,24 +86,29 @@
   margin: 15px auto;
   position: relative;
   height: 50px;
-  width: 50px;
+  width: auto;
   border-radius: 180px;
   visibility: visible;
-  outline: none;
   box-shadow: 2px 2px 2px 2px;
   -webkit-transition: visibility 2s;
   -webkit-transition-delay: 1s;
 }
 
 .beforeAboutPage .innerBlock {
-  margin-top: 30px;
+  display: inline-flex;
+  margin: 30px auto 0px;
+  width: 100%;
   height: 0px;
+  text-align: center;
   -webkit-transition: height 2s, visibility 2s;
 }
 
 .afterAboutPage .innerBlock {
-  margin-top: 30px;
-  height: 400px;
+  display: inline-flex;
+  margin: 30px auto 0px;
+  text-align: center;
+  width: 100%;
+  height: 300px;
   -webkit-transition: height 2s, visibility 2s;
 }
 
@@ -89,8 +117,6 @@
   position: relative;
   height: 150px;
   width: auto;
-  float: right;
-  left: -640px;
 }
 
 .afterAboutPage .innerBlock #photo {
@@ -98,43 +124,40 @@
   position: relative;
   height: 150px;
   width: auto;
-  float: right;
-  left: -640px;
 }
 
 .beforeAboutPage .innerBlock .left {
   position: relative;
-  float: left;
   height: 300px;
-  width: 600px;
-  margin-left: 35px;
+  width: 550px;
+  float: left;
+  margin-left: 50px;
 }
 
 .afterAboutPage .innerBlock .left {
   position: relative;
+  height: 200px;
+  width: 550px;
   float: left;
-  height: 300px;
-  width: 600px;
-  /*border: 1px solid red;*/
-  margin-left: 35px;
+  text-align: left;
+  margin-left: 50px;
 }
 
 .beforeAboutPage .innerBlock .right {
   position: relative;
   height: 300px;
-  width: 570px;
-  /*border: 1px solid red;*/
-  margin-right: -85px;
+  width: 550px;
   float: right;
+  margin-right: 50px;
 }
 
 .afterAboutPage .innerBlock .right {
   position: relative;
-  height: 300px;
-  width: 570px;
-  /*border: 1px solid red;*/
-  margin-right: -85px;
+  height: 200px;
+  width: 550px;
   float: right;
+  text-align: right;
+  margin-right: 50px;
 }
 
 .beforeAboutPage .innerBlock .left p {
@@ -146,7 +169,6 @@
   line-height: 25px;
   letter-spacing: 1px;
   color: black;
-  padding: 0px 20px;
 }
 
 .afterAboutPage .innerBlock .left p {
@@ -158,7 +180,6 @@
   line-height: 25px;
   letter-spacing: 1px;
   color: black;
-  padding: 0px 20px;
 }
 
 .beforeAboutPage .innerBlock .right p {
@@ -170,7 +191,7 @@
   line-height: 25px;
   letter-spacing: 1px;
   color: black;
-  padding: 0px 20px;
+  /*padding: 0px 20px;*/
 }
 
 .afterAboutPage .innerBlock .right p {
@@ -182,7 +203,37 @@
   line-height: 25px;
   letter-spacing: 1px;
   color: black;
-  padding: 0px 20px;
+  /*padding: 0px 20px;*/
 }
+
+.beforeAboutPage .iconsLink {
+  display: inline-flex;
+  position: relative;
+  height: 100px;
+  width: 400px;
+  top: -50px;
+  justify-content: space-around;
+  -webkit-transition: top 1s;
+}
+
+.afterAboutPage .iconsLink {
+  display: inline-flex;
+  position: relative;
+  height: 100px;
+  width: 400px;
+  top: -100px;
+  justify-content: space-around;
+}
+
+.beforeAboutPage .iconsLink img {
+  position: relative;
+  align-items: center;
+}
+
+.afterAboutPage .iconsLink img {
+  position: relative;
+  align-items: center;
+}
+
 
 
