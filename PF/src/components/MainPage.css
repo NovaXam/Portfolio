@@ -1,3 +1,71 @@
+@media (max-width: 500px) {
+  .beforeLogo #logoMain {
+    height: 150px;
+    width: auto;
+    z-index: 1;
+  }
+  .afterLogo #logoMain {
+    height: 125px;
+    width: auto;
+    z-index: 1;
+  }
+  .afterClickMenu {
+    height: 300px;
+  }
+
+  .afterClickMenu #linesMain {
+    display: inline-block;
+    position: relative;
+    height: 100px;
+    width: 100%;
+  }
+  .beforeClickMenu #linesMain p {
+    width: 100%;
+    font-size: 100px;
+    letter-spacing: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .afterClickMenu #linesMain p {
+    width: 100%;
+    font-size: 100px;
+    letter-spacing: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .beforeClickMenu #catId {
+    padding-left: 0px;
+    width: 100%;
+  }
+  .afterClickMenu #catId {
+    padding-left: 0px;
+    width: 100%;
+  }
+  #about {
+    height: 75px;
+    width: auto;
+    margin: 0px 5px 0px;
+  }
+  #read {
+    height: 75px;
+    width: auto;
+    margin: 0px 5px 0px;
+  }
+  #works {
+    height: 75px;
+    width: auto;
+    margin: 0px 5px 0px;
+  }
+  #info {
+    height: 75px;
+    width: auto;
+    margin: 0px 5px 0px;
+  }
+  /*#afterMenuBlock {
+    height: 200px;
+  }*/
+}
+
 .mainBlock {
   display: inline-block;
   margin: 0 auto;
@@ -12,6 +80,8 @@
   text-align: center;
   transition: height 2s;
   -webkit-transition: height 2s;
+  -moz-transition: height 2s;
+  -ms-transition: height 2s;
 }
 
 .afterLogo {
@@ -20,7 +90,10 @@
   margin: 0 auto;
   text-align: center;
   transition: height 2s;
+  transition: height 2s;
   -webkit-transition: height 2s;
+  -moz-transition: height 2s;
+  -ms-transition: height 2s;
 }
 
 .beforeLogo img {
@@ -32,6 +105,8 @@
   width: auto;
   transition: height 2s, top 2s, -webkit-transform 2s;
   -webkit-transition: height 2s, top 2s, -webkit-transform 2s;
+  -moz-transition: height 2s, top 2s, -webkit-transform 2s;
+  -ms-transition: height 2s, top 2s, -webkit-transform 2s;
 }
 
 .afterLogo img {
@@ -43,6 +118,14 @@
   width: auto;
   transition: height 2s, top 2s;
   -webkit-transition: height 2s, top 2s;
+  -moz-transition: height 2s, top 2s;
+  -ms-transition: height 2s, top 2s;
+}
+
+#red {
+  display: inline-block;
+  position: relative;
+
 }
 
 .beforeLogo img:hover {
@@ -73,7 +156,10 @@
   text-align: center;
   overflow-x: hidden;
   overflow-y: hidden;
+  transition: height 2s;
   -webkit-transition: height 2s;
+  -moz-transition: height 2s;
+  -ms-transition: height 2s;
 }
 
 .afterClickMenu {
@@ -82,7 +168,10 @@
   text-align: center;
   overflow-x: hidden;
   overflow-y: hidden;
+  transition: height 2s;
   -webkit-transition: height 2s;
+  -moz-transition: height 2s;
+  -ms-transition: height 2s;
 }
 
 .lines p {
@@ -105,7 +194,10 @@
   text-align: center;
   overflow-x: hidden;
   overflow-y: hidden;
+  transition: height 2s;
   -webkit-transition: height 2s;
+  -moz-transition: height 2s;
+  -ms-transition: height 2s;
 }
 
 .afterClickMenu .lines {
@@ -117,21 +209,30 @@
   background-color: #FFA60D;
   overflow-x: hidden;
   overflow-y: hidden;
+  transition: height 2s;
   -webkit-transition: height 2s;
+  -moz-transition: height 2s;
+  -ms-transition: height 2s;
 }
 
 .beforeClickMenu .categories {
   height: 0px;
   width: 100%;
   margin: 0 auto;
+  transition: height 2s, top 1s;
   -webkit-transition: height 2s, top 1s;
+  -moz-transition: height 2s, top 1s;
+  -ms-transition: height 2s, top 1s;
 }
 
 .afterClickMenu .categories {
   height: 225px;
   width: auto;
   margin: 0 auto;
+  transition: height 2s;
   -webkit-transition: height 2s;
+  -moz-transition: height 2s;
+  -ms-transition: height 2s;
 }
 
 .categories ul {
@@ -141,7 +242,6 @@
   margin: 10px 30px 0px 0px;
   flex-direction: row;
   justify-content: space-between;
-  /*border: 1px solid red;*/
 }
 
 .beforeClickMenu .categories ul img {
@@ -150,7 +250,10 @@
   border-radius: 180px;
   margin: 0px 50px 0px;
   z-index: 1;
+  transition: height 2s, width 2s, margin 2s;
   -webkit-transition: height 2s, width 2s, margin 2s;
+  -moz-transition: height 2s, width 2s, margin 2s;
+  -ms-transition: height 2s, width 2s, margin 2s;
 }
 
 .afterClickMenu .categories ul img {
@@ -160,12 +263,21 @@
   border-radius: 180px;
   margin: 0px 50px 0px;
   z-index: 1;
+  transition: height 2s, width 2s, margin 2s;
+  transition-delay: 0.5s;
   -webkit-transition: height 2s, width 2s, margin 2s;
   -webkit-transition-delay: 0.5s;
+  -moz-transition: height 2s, width 2s, margin 2s;
+  -moz-transition-delay: 0.5s;
+  -ms-transition: height 2s, width 2s, margin 2s;
+  -ms-transition-delay: 0.5s;
 }
 
 .afterClickMenu .categories ul img:hover {
   height: 235px;
   width: 235px;
+  transition: height 1s, width 1s;
   -webkit-transition: height 1s, width 1s;
+  -moz-transition: height 1s, width 1s;
+  -ms-transition: height 1s, width 1s;
 }

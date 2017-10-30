@@ -1,19 +1,23 @@
 import React from 'react';
+import Scroll from 'react-scroll';
 import './Source.css';
 import Sourcepage from '../assets/Sourcepage.jpg';
 import buttonRead from '../assets/buttonRead.png';
 
+const Element = Scroll.Element;
+
 const Source = (props) => {
   return (
-    <div className="sourceMainBlock">
+  <Element name="Source">
+    <div className="sourceMainBlock" style={props.heightSource}>
       <div className={props.sourceLine}>
         <p>READ</p>
       </div>
       <div className={props.sourcePage}>
-        <img id='source' src={buttonRead} onClick={props.handleSourceListenerRollBack} />
+        <img id='source' src={buttonRead} alt="sourceBut" onClick={props.handleSourceListenerRollBack} />
         <div className="innerBlock">
           <div className="left">
-            <img id='sourcePic' src={Sourcepage} />
+            <img id='sourcePic' src={Sourcepage} alt="blockPic" />
           </div>
           <div className="right">
             <ul>
@@ -34,7 +38,8 @@ const Source = (props) => {
         </div>
       </div>
     </div>
-    );
+  </Element>
+  );
 };
 
 export default Source;

@@ -4,7 +4,10 @@
   overflow-x: hidden;
   overflow-y: hidden;
   background-color: #68AFFF;
+  transition: height 2s;
   -webkit-transition: height 2s;
+  -moz-transition: height 2s;
+  -ms-transition: height 2s;
 }
 
 .beforeMonsterLine p {
@@ -33,7 +36,10 @@
   overflow-x: hidden;
   overflow-y: hidden;
   background-color: #68AFFF;
+  transition: height 2s;
   -webkit-transition: height 2s;
+  -moz-transition: height 2s;
+  -ms-transition: height 2s;
 }
 
 .beforeMonsterPage {
@@ -44,8 +50,14 @@
   overflow-x: hidden;
   overflow-y: hidden;
   border-bottom: 0px solid #68AFFF;
+  transition: height 2s, border-bottom 2s;
+  transition-delay: border-bottom 2s;
   -webkit-transition: height 2s, border-bottom 2s;
   -webkit-transition-delay: border-bottom 2s;
+  -moz-transition: height 2s, border-bottom 2s;
+  -moz-transition-delay: border-bottom 2s;
+  -ms-transition: height 2s, border-bottom 2s;
+  -ms-transition-delay: border-bottom 2s;
 }
 
 .afterMonsterPage {
@@ -56,8 +68,14 @@
   overflow-x: hidden;
   overflow-y: hidden;
   border-bottom: 3px solid #68AFFF;
+  transition: height 2s;
+  transition-delay: border-bottom 2s;
   -webkit-transition: height 2s;
   -webkit-transition-delay: border-bottom 2s;
+  -moz-transition: height 2s;
+  -moz-transition-delay: border-bottom 2s;
+  -ms-transition: height 2s;
+  -ms-transition-delay: border-bottom 2s;
 }
 
 .beforeMonsterPage #monster {
@@ -71,7 +89,10 @@
   z-index: -1;
   box-shadow: 0.5px 0.5px 0.5px 0.5px;
   visibility: hidden;
+  transition: visibility 1s;
   -webkit-transition: visibility 1s;
+  -moz-transition: visibility 1s;
+  -ms-transition: visibility 1s;
 }
 
 .afterMonsterPage #monster {
@@ -84,27 +105,40 @@
   visibility: visible;
   outline: none;
   box-shadow: 2px 2px 2px 2px;
+  transition: visibility 2s;
+  transition-delay: 1s;
   -webkit-transition: visibility 2s;
   -webkit-transition-delay: 1s;
+  -moz-transition: visibility 2s;
+  -moz-transition-delay: 1s;
+  -ms-transition: visibility 2s;
+  -ms-transition-delay: 1s;
 }
 
 .beforeMonsterPage .innerBlock {
   display: inline-flex;
   flex-direction: row;
+  justify-content: center;
   height: 0px;
   margin-top: 15px;
   width: 100%;
-  -webkit-transition: height 2s, visibility 2s;
+  transition: height 2s;
+  -webkit-transition: height 2s;
+  -moz-transition: height 2s;
+  -ms-transition: height 2s;
 }
 
 .afterMonsterPage .innerBlock {
   display: inline-flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  height: 0px;
   margin-top: 15px;
-  height: 400px;
   width: 100%;
-  -webkit-transition: height 2s, visibility 2s;
+  transition: height 2s;
+  -webkit-transition: height 2s;
+  -moz-transition: height 2s;
+  -ms-transition: height 2s;
 }
 
 .beforeMonsterPage .innerBlock .left {
@@ -114,7 +148,10 @@
   margin-top: 15px;
   height: 400px;
   width: 100%;
+  transition: margin-top 2s;
   -webkit-transition: margin-top 2s;
+  -moz-transition: margin-top 2s;
+  -ms-transition: margin-top 2s;
 }
 
 .afterMonsterPage .innerBlock .left {
@@ -124,7 +161,10 @@
   margin-top: 15px;
   height: 400px;
   width: 100%;
+  transition: margin-top 2s;
   -webkit-transition: margin-top 2s;
+  -moz-transition: margin-top 2s;
+  -ms-transition: margin-top 2s;
 }
 
 #mmPicture {
@@ -134,7 +174,10 @@
   width: 525px;
   border-radius: 5px;
   margin-bottom: 20px;
+  box-shadow:  0px 0px 10px 5px rgba(104, 175, 255, 0.3), 0 0 40px rgba(104, 175, 255, 0.3) inset;
   -webkit-box-shadow:  0px 0px 10px 5px rgba(104, 175, 255, 0.3), 0 0 40px rgba(104, 175, 255, 0.3) inset;
+  -moz-box-shadow:  0px 0px 10px 5px rgba(104, 175, 255, 0.3), 0 0 40px rgba(104, 175, 255, 0.3) inset;
+  -ms-box-shadow:  0px 0px 10px 5px rgba(104, 175, 255, 0.3), 0 0 40px rgba(104, 175, 255, 0.3) inset;
 }
 
 .beforeMonsterPage .innerBlock .left .icons {
@@ -230,12 +273,14 @@
   font-family: 'helvetica';
   font-weight: 300;
   letter-spacing: 5px;
+  padding-left: 40px;
 }
 
 .afterMonsterPage .innerBlock .right .descript h1 {
   font-family: 'helvetica';
   font-weight: 300;
   letter-spacing: 5px;
+  padding-left: 40px;
 }
 
 .beforeMonsterPage .innerBlock .right .descript p {
@@ -247,7 +292,7 @@
   line-height: 25px;
   letter-spacing: 1px;
   color: black;
-  padding: 0px 20px;
+  padding-left: 40px;
 }
 
 .afterMonsterPage .innerBlock .right .descript p {
@@ -259,23 +304,27 @@
   line-height: 25px;
   letter-spacing: 1px;
   color: black;
-  padding: 0px 20px;
+  padding-left: 40px;
 }
 
 .beforeMonsterPage .innerBlock .right .tech {
+  display: inline-block;
   position: relative;
   height: 200px;
-  width: 650px;
-  margin: 0px 0px 0px 40px;
+  width: 100%;
+  margin-left: 40px;
   border-top: 1px solid black;
+  text-align: center;
 }
 
 .afterMonsterPage .innerBlock .right .tech {
+  display: inline-block;
   position: relative;
   height: 200px;
-  width: 650px;
-  margin: 0px 0px 0px 40px;
+  width: 100%;
+  margin-left: 40px;
   border-top: 1px solid black;
+  text-align: center;
 }
 
 .beforeMonsterPage .innerBlock .right .tech h1 {
@@ -283,6 +332,7 @@
   font-family: 'helvetica';
   font-weight: 300;
   letter-spacing: 3px;
+  padding-right: 40px;
 }
 
 .afterMonsterPage .innerBlock .right .tech h1 {
@@ -290,6 +340,7 @@
   font-family: 'helvetica';
   font-weight: 300;
   letter-spacing: 3px;
+  padding-right: 40px;
 }
 
 .beforeMonsterPage .innerBlock .right .tech p {
@@ -299,6 +350,7 @@
   font-variant: small-caps;
   letter-spacing: 2px;
   text-align: center;
+  padding-right: 40px;
 }
 
 .afterMonsterPage .innerBlock .right .tech p {
@@ -307,4 +359,5 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-variant: small-caps;
   letter-spacing: 2px;
+  padding-right: 40px;
 }

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Scroll from 'react-scroll';
-import { scroller } from 'react-scroll';
 import './App.css';
 import About from './components/About';
 import MainPage from './components/MainPage';
@@ -12,6 +11,8 @@ import MissionX from './components/MissionX';
 import Source from './components/Source';
 import Resume from './components/Resume';
 import Footer from './components/partials/Footer';
+
+const scroller = Scroll.scroller;
 
 class App extends Component {
   constructor(props) {
@@ -46,10 +47,11 @@ class App extends Component {
       workPointerSurf: {},
       workPointerMon: {},
       workPointerMiss: {},
-      height: {height: '0px'},
+      height: { height: '0px' },
       heightAbout: {
         height: '0px',
-        marginBottom: '0px'},
+        marginBottom: '0px',
+      },
       heightGuess: {
         height: '0px',
         transition: 'height 2s',
@@ -61,8 +63,12 @@ class App extends Component {
       heightMonster: {
         height: '0px',
         transition: 'height 2s',
-        },
+      },
       heightMissionX: {
+        height: '0px',
+        transition: 'height 2s',
+      },
+      heightSource: {
         height: '0px',
         transition: 'height 2s',
       },
@@ -111,30 +117,46 @@ class App extends Component {
   }
 
   async handlerAboutListener(event) {
-    console.log(document.body.scrollHeight);
     try {
       const prev = await event.preventDefault();
-      const state = await this.setState({
+      const stateClass = await this.setState({
         aboutLine: 'afterAboutLine',
         aboutPage: 'afterAboutPage',
-        scaleAbout: {
-          height: '250px',
-          width: '250px',
-        },
-        heightAbout: {
-          height: '500px',
-          marginBottom: '57px',
-          transition: 'height 2s, margin-bottom 2s',
-        },
       });
-      const domScroll = Scroll.animateScroll.scrollTo(document.body.scrollHeight - 300);
+      if(window.screen.width <= 500) {
+        this.setState({
+          scaleAbout: {
+            height: '100px',
+            width: 'auto',
+          },
+          heightAbout: {
+            height: '300px',
+            marginBottom: '15px',
+            transition: 'height 2s, margin-bottom 2s',
+          },
+        })
+      } else {
+        this.setState({
+          scaleAbout: {
+            height: '250px',
+            width: '250px',
+          },
+          heightAbout: {
+            height: '500px',
+            marginBottom: '57px',
+            transition: 'height 2s, margin-bottom 2s',
+          },
+        });
+      }
+      scroller.scrollTo('About', {
+        smooth: true,
+      });
     } catch(err) {
       console.log(err);
     }
   }
 
   async handlerPortfolioListener(event) {
-    console.log(document.body.scrollHeight);
     try {
       const prev = await event.preventDefault();
       const state = await this.setState({
@@ -149,8 +171,9 @@ class App extends Component {
           transition: 'height 2s',
         },
       });
-      const domScroll = Scroll.animateScroll.scrollTo(600,
-        {smooth: true});
+      scroller.scrollTo('Portfolio', {
+        smooth: true,
+      });
     } catch(err) {
       console.log(err);
     }
@@ -160,17 +183,19 @@ class App extends Component {
     try {
       const prev = await event.preventDefault();
       const state = await this.setState({
-      portGuessLine: 'afterGuessLine',
-      portGuessPage: 'afterGuessPage',
-      workPointerGuess: {
-        backgroundColor: 'rgba(32,152,209,0.8)',
-      },
-      heightGuess: {
-        height: '675px',
-        transition: 'height 2s',
-      }
+        portGuessLine: 'afterGuessLine',
+        portGuessPage: 'afterGuessPage',
+        workPointerGuess: {
+          backgroundColor: 'rgba(32,152,209,0.8)',
+        },
+        heightGuess: {
+          height: '675px',
+          transition: 'height 2s',
+        },
     });
-    const domScroll = Scroll.animateScroll.scrollTo(1350, { smooth: true });
+    scroller.scrollTo('Guess', {
+        smooth: true,
+      });
     } catch(err) {
       console.log(err);
     }
@@ -190,7 +215,9 @@ class App extends Component {
           transition: 'height 2s',
         },
       });
-      const domScroll = Scroll.animateScroll.scrollTo(1350, { smooth: true });
+      scroller.scrollTo('Surfer', {
+        smooth: true,
+      });
     } catch(err) {
       console.log(err);
     }
@@ -210,7 +237,9 @@ class App extends Component {
           transition: 'height 2s',
         },
       });
-      const domScroll = Scroll.animateScroll.scrollTo(1350, { smooth: true });
+       scroller.scrollTo('Monster', {
+        smooth: true,
+      });
     } catch(err) {
       console.log(err);
     }
@@ -230,13 +259,16 @@ class App extends Component {
           transition: 'height 2s',
         },
       });
-      const domScroll = Scroll.animateScroll.scrollTo(1350, { smooth: true });
+      scroller.scrollTo('MissionX', {
+        smooth: true,
+      });
     } catch (err) {
       console.log(err);
     }
   }
 
   async handlerSourceListener(event) {
+    console.log(window.screen.availHeight);
     try {
       const prev = await event.preventDefault();
       const state = await this.setState({
@@ -246,8 +278,14 @@ class App extends Component {
           height: '250px',
           width: '250px',
         },
+        heightSource: {
+        height: '600px',
+        transition: 'height 2s',
+      },
       });
-      const domScroll = Scroll.animateScroll.scrollTo(1150, { smooth: true });
+      scroller.scrollTo('Source', {
+        smooth: true,
+      });
     } catch(err) {
       console.log(err);
     }
@@ -264,7 +302,9 @@ class App extends Component {
           width: '250px',
         },
       });
-      const domScroll = Scroll.animateScroll.scrollTo(1150, { smooth: true });
+      scroller.scrollTo('Resume', {
+        smooth: true,
+      });
     } catch(err) {
       console.log(err);
     }
@@ -356,6 +396,10 @@ class App extends Component {
       sourceLine: 'beforeSourceLine',
       sourcePage: 'beforeSourcePage',
       scaleSource: {},
+      heightSource: {
+        height: '0px',
+        transition: 'height 2s',
+      },
     });
   }
 
@@ -434,6 +478,7 @@ class App extends Component {
         <Source
           sourceLine={this.state.sourceLine}
           sourcePage={this.state.sourcePage}
+          heightSource={this.state.heightSource}
           handleSourceListenerRollBack={this.handleSourceListenerRollBack}
         />
         <Resume

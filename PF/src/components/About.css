@@ -11,7 +11,10 @@
   overflow-x: hidden;
   overflow-y: hidden;
   background-color: #FF5543;
+  transition: height 2s;
   -webkit-transition: height 2s;
+  -moz-transition: height 2s;
+  -ms-transition: height 2s;
 }
 
 .afterAboutLine {
@@ -23,7 +26,10 @@
   overflow-x: hidden;
   overflow-y: hidden;
   background-color: #FF5543;
+  transition: height 2s;
   -webkit-transition: height 2s;
+  -moz-transition: height 2s;
+  -ms-transition: height 2s;
 }
 
 .beforeAboutLine p {
@@ -54,8 +60,15 @@
   overflow-x: hidden;
   overflow-y: hidden;
   border-bottom: 0px solid #FF5543;
+  transition: height 2s, border-bottom 2s;
+  transition-delay: border-bottom 2s;
   -webkit-transition: height 2s, border-bottom 2s;
   -webkit-transition-delay: border-bottom 2s;
+  -moz-transition: height 2s, border-bottom 2s;
+  -moz-transition-delay: border-bottom 2s;
+  -ms-transition: height 2s, border-bottom 2s;
+  -ms-transition-delay: border-bottom 2s;
+
 }
 
 .afterAboutPage {
@@ -64,8 +77,14 @@
   overflow-x: hidden;
   overflow-y: hidden;
   border-bottom: 3px solid #FF5543;
+  transition: height 2s;
+  transition-delay: border-bottom 2s;
   -webkit-transition: height 2s;
   -webkit-transition-delay: border-bottom 2s;
+  -moz-transition: height 2s;
+  -moz-transition-delay: border-bottom 2s;
+  -ms-transition: height 2s;
+  -ms-transition-delay: border-bottom 2s;
 }
 
 .beforeAboutPage img {
@@ -77,8 +96,14 @@
   border-radius: 180px;
   z-index: -1;
   box-shadow: 0.5px 0.5px 0.5px 0.5px;
+  -webkit-box-shadow: 0.5px 0.5px 0.5px 0.5px;
+  -moz-box-shadow: 0.5px 0.5px 0.5px 0.5px;
+  -ms-box-shadow: 0.5px 0.5px 0.5px 0.5px;
   visibility: hidden;
+  transition: visibility 1s;
   -webkit-transition: visibility 1s;
+  -moz-transition: visibility 1s;
+  -ms-transition: visibility 1s;
 }
 
 .afterAboutPage img {
@@ -90,26 +115,43 @@
   border-radius: 180px;
   visibility: visible;
   box-shadow: 2px 2px 2px 2px;
+  -webkit-box-shadow: 2px 2px 2px 2px;
+  -moz-box-shadow: 2px 2px 2px 2px;
+  -ms-box-shadow: 2px 2px 2px 2px;
+  transition: visibility 2s;
+  transition-delay: 1s;
   -webkit-transition: visibility 2s;
   -webkit-transition-delay: 1s;
+  -moz-transition: visibility 2s;
+  -moz-transition-delay: 1s;
+  -ms-transition: visibility 2s;
+  -ms-transition-delay: 1s;
 }
 
 .beforeAboutPage .innerBlock {
   display: inline-flex;
+  flex-direction: row;
   margin: 30px auto 0px;
   width: 100%;
   height: 0px;
-  text-align: center;
+  justify-content: center;
+  transition: height 2s, visibility 2s;
   -webkit-transition: height 2s, visibility 2s;
+  -moz-transition: height 2s, visibility 2s;
+  -ms-transition: height 2s, visibility 2s;
 }
 
 .afterAboutPage .innerBlock {
   display: inline-flex;
+  flex-direction: row;
   margin: 30px auto 0px;
-  text-align: center;
   width: 100%;
   height: 300px;
+  justify-content: center;
+  transition: height 2s, visibility 2s;
   -webkit-transition: height 2s, visibility 2s;
+  -moz-transition: height 2s, visibility 2s;
+  -ms-transition: height 2s, visibility 2s;
 }
 
 .beforeAboutPage .innerBlock #photo {
@@ -117,6 +159,7 @@
   position: relative;
   height: 150px;
   width: auto;
+  margin: 0px 30px;
 }
 
 .afterAboutPage .innerBlock #photo {
@@ -124,39 +167,38 @@
   position: relative;
   height: 150px;
   width: auto;
+  margin: 0px 30px;
 }
 
 .beforeAboutPage .innerBlock .left {
   position: relative;
-  height: 300px;
-  width: 550px;
-  float: left;
+  height: 200px;
+  width: 100%;
+  text-align: center;
   margin-left: 50px;
 }
 
 .afterAboutPage .innerBlock .left {
   position: relative;
   height: 200px;
-  width: 550px;
-  float: left;
-  text-align: left;
+  width: 100%;
+  text-align: center;
   margin-left: 50px;
 }
 
 .beforeAboutPage .innerBlock .right {
   position: relative;
-  height: 300px;
-  width: 550px;
-  float: right;
+  height: 200px;
+  width: 100%;
+  text-align: center;
   margin-right: 50px;
 }
 
 .afterAboutPage .innerBlock .right {
   position: relative;
   height: 200px;
-  width: 550px;
-  float: right;
-  text-align: right;
+  width: 100%;
+  text-align: center;
   margin-right: 50px;
 }
 
@@ -191,7 +233,6 @@
   line-height: 25px;
   letter-spacing: 1px;
   color: black;
-  /*padding: 0px 20px;*/
 }
 
 .afterAboutPage .innerBlock .right p {
@@ -203,7 +244,6 @@
   line-height: 25px;
   letter-spacing: 1px;
   color: black;
-  /*padding: 0px 20px;*/
 }
 
 .beforeAboutPage .iconsLink {
@@ -213,7 +253,10 @@
   width: 400px;
   top: -50px;
   justify-content: space-around;
+  transition: top 1s;
   -webkit-transition: top 1s;
+  -moz-transition: top 1s;
+  -ms-transition: top 1s;
 }
 
 .afterAboutPage .iconsLink {
@@ -223,6 +266,10 @@
   width: 400px;
   top: -100px;
   justify-content: space-around;
+  transition: top 1s;
+  -webkit-transition: top 1s;
+  -moz-transition: top 1s;
+  -ms-transition: top 1s;
 }
 
 .beforeAboutPage .iconsLink img {
@@ -234,6 +281,3 @@
   position: relative;
   align-items: center;
 }
-
-
-

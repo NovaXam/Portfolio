@@ -1,25 +1,28 @@
 import React from 'react';
+import Scroll from 'react-scroll';
 import './Surfer.css';
 import Surferpage from '../assets/Portfolio/Surfer_page.png';
-import iconGit from '../assets/arrows.png';
 import buttonSerf from '../assets/buttonFolio.png';
 import iconsGit from '../assets/Icons/iconsGH.png';
 import iconsHeroku from '../assets/Icons/iconsHeroku.png';
 
+const Element = Scroll.Element;
+
 const Surfer = (props) => {
   return (
+    <Element name="Surfer">
     <div className="portSurfMainBlock" style={props.heightSurfer}>
       <div className={props.portSurferLine}>
         <p>S-SURFER</p>
       </div>
       <div className={props.portSurferPage}>
-        <img id='surfer' src={buttonSerf} onClick={props.handlePortSurfListenerRollBack} />
+        <img id='surfer' src={buttonSerf} alt="surfBut" onClick={props.handlePortSurfListenerRollBack} />
         <div className="innerBlock">
           <div className="left">
-              <div className="mainPic"><img id='SurfPicture' src={Surferpage} /></div>
+              <div className="mainPic"><img id="SurfPicture" src={Surferpage} alt="surfPic" /></div>
               <div className="icons">
-                <a href="https://github.com/NovaXam/project-2-express" target="blank"><img id="iconGit" src={iconsGit} /></a>
-                <a href="#"><img id="iconHer" src={iconsHeroku} /></a>
+                <a href="https://github.com/NovaXam/project-2-express" target="blank"><img id="iconGit" src={iconsGit} alt="linkToGitSurf"/></a>
+                <a href="#"><img id="iconHer" src={iconsHeroku} alt="linkToHerSurf" /></a>
               </div>
             </div>
             <div className="right">
@@ -36,9 +39,10 @@ const Surfer = (props) => {
                 <p>Html5, Css3, Javascript(ES6), GitHub, Node.js, Express, Psql</p>
               </div>
             </div>
+          </div>
         </div>
       </div>
-    </div>
+    </Element>
   );
 };
 

@@ -12,7 +12,10 @@
   overflow-y: hidden;
   z-index: -1;
   background-color: #FFFF67;
+  transition: height 2s;
   -webkit-transition: height 2s;
+  -moz-transition: height 2s;
+  -ms-transition: height 2s;
 }
 
 .afterResumeLine {
@@ -24,7 +27,10 @@
   overflow-y: hidden;
   z-index: -1;
   background-color: #FFFF67;
+  transition: height 2s;
   -webkit-transition: height 2s;
+  -moz-transition: height 2s;
+  -ms-transition: height 2s;
 }
 
 .beforeResumeLine p {
@@ -55,8 +61,14 @@
   overflow-x: hidden;
   overflow-y: hidden;
   border-bottom: 0px solid #FFFF67;
+  transition: height 2s, border-bottom 2s;
+  transition-delay: border-bottom 2s;
   -webkit-transition: height 2s, border-bottom 2s;
   -webkit-transition-delay: border-bottom 2s;
+  -moz-transition: height 2s, border-bottom 2s;
+  -moz-transition-delay: border-bottom 2s;
+  -ms-transition: height 2s, border-bottom 2s;
+  -ms-transition-delay: border-bottom 2s;
 }
 
 .afterResumePage {
@@ -65,8 +77,14 @@
   overflow-x: hidden;
   overflow-y: hidden;
   border-bottom: 3px solid #FFFF67;
+  transition: height 2s;
+  transition-delay: border-bottom 2s;
   -webkit-transition: height 2s;
   -webkit-transition-delay: border-bottom 2s;
+  -moz-transition: height 2s;
+  -moz-transition-delay: border-bottom 2s;
+  -ms-transition: height 2s;
+  -ms-transition-delay: border-bottom 2s;
 }
 
 .beforeResumePage #info {
@@ -79,7 +97,10 @@
   z-index: -1;
   box-shadow: 0.5px 0.5px 0.5px 0.5px;
   visibility: hidden;
+  transition: visibility 1s;
   -webkit-transition: visibility 1s;
+  -moz-transition: visibility 1s;
+  -ms-transition: visibility 1s;
 }
 
 .afterResumePage #info {
@@ -91,26 +112,40 @@
   border-radius: 180px;
   visibility: visible;
   box-shadow: 2px 2px 2px 2px;
+  transition: visibility 2s;
+  transition-delay: 1s;
   -webkit-transition: visibility 2s;
   -webkit-transition-delay: 1s;
+  -moz-transition: visibility 2s;
+  -moz-transition-delay: 1s;
+  -ms-transition: visibility 2s;
+  -ms-transition-delay: 1s;
 }
 
 .beforeResumePage .innerBlock {
   display: inline-flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: row;
   margin: 30px auto 0px;
   width: 100%;
   height: 0px;
+  transition: height 2s, visibility 2s;
   -webkit-transition: height 2s, visibility 2s;
+  -moz-transition: height 2s, visibility 2s;
+  -ms-transition: height 2s, visibility 2s;
 }
 
 .afterResumePage .innerBlock {
   display: inline-flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
   margin: 30px auto 0px;
   width: 100%;
   height: 200px;
+  transition: height 2s, visibility 2s;
   -webkit-transition: height 2s, visibility 2s;
+  -moz-transition: height 2s, visibility 2s;
+  -ms-transition: height 2s, visibility 2s;
 }
 
 .beforeResumePage .innerBlock #photo {
@@ -133,28 +168,28 @@
   position: relative;
   height: 200px;
   width: 550px;
-  float: left;
+  text-align: center;
 }
 
 .afterResumePage .innerBlock .left {
   position: relative;
   height: 200px;
   width: 550px;
-  float: left;
+  text-align: center;
 }
 
 .beforeResumePage .innerBlock .right {
   position: relative;
   height: 200px;
   width: 550px;
-  float: right;
+  text-align: center;
 }
 
 .afterResumePage .innerBlock .right {
   position: relative;
   height: 200px;
   width: 550px;
-  float: right;
+  text-align: center;
 }
 
 .beforeResumePage .innerBlock .left p {
@@ -230,6 +265,3 @@
   height: 50px;
   width: auto;
 }
-
-
-

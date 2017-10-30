@@ -4,7 +4,10 @@
   overflow-x: hidden;
   overflow-y: hidden;
   background-color: #68AFFF;
+  transition: height 2s;
   -webkit-transition: height 2s;
+  -moz-transition: height 2s;
+  -ms-transition: height 2s;
 }
 
 .portMainBlock p {
@@ -23,7 +26,10 @@
   overflow-x: hidden;
   overflow-y: hidden;
   background-color: #68AFFF;
+  transition: height 2s;
   -webkit-transition: height 2s;
+  -moz-transition: height 2s;
+  -ms-transition: height 2s;
 }
 
 .beforePortPage {
@@ -35,8 +41,14 @@
   overflow-y: hidden;
   white-space: nowrap;
   border-bottom: 0px solid #68AFFF;
+  transition: height 2s, border-bottom 2s;
+  transition-delay: border-bottom 2s;
   -webkit-transition: height 2s, border-bottom 2s;
   -webkit-transition-delay: border-bottom 2s;
+  -moz-transition: height 2s, border-bottom 2s;
+  -moz-transition-delay: border-bottom 2s;
+  -ms-transition: height 2s, border-bottom 2s;
+  -ms-transition-delay: border-bottom 2s;
 }
 
 .afterPortPage {
@@ -49,8 +61,14 @@
   overflow-y: hidden;
   white-space: nowrap;
   border-bottom: 3px solid #68AFFF;
+  transition: height 2s;
+  transition-delay: border-bottom 2s;
   -webkit-transition: height 2s;
   -webkit-transition-delay: border-bottom 2s;
+  -moz-transition: height 2s;
+  -moz-transition-delay: border-bottom 2s;
+  -ms-transition: height 2s;
+  -ms-transition-delay: border-bottom 2s;
 
 }
 
@@ -64,7 +82,10 @@
   z-index: -1;
   box-shadow: 0.5px 0.5px 0.5px 0.5px;
   visibility: hidden;
+  transition: visibility 1s;
   -webkit-transition: visibility 1s;
+  -moz-transition: visibility 1s;
+  -ms-transition: visibility 1s;
 }
 
 .afterPortPage #portfolio {
@@ -76,8 +97,14 @@
   border-radius: 180px;
   box-shadow: 2px 2px 2px 2px;
   visibility: visible;
+  transition: visibility 2s;
+  transition-delay: 1s;
   -webkit-transition: visibility 2s;
   -webkit-transition-delay: 1s;
+  -moz-transition: visibility 2s;
+  -moz-transition-delay: 1s;
+  -ms-transition: visibility 2s;
+  -ms-transition-delay: 1s;
 }
 
 .beforePortPage ul li {
@@ -108,8 +135,14 @@
   width: 300px;
   border-radius: 10px;
   margin: 0px 20px 0px;
+  box-shadow:  0 1px 5px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  transition: height 2s, width 2s, margin 2s;
   -webkit-box-shadow:  0 1px 5px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   -webkit-transition: height 2s, width 2s, margin 2s;
+  -moz-box-shadow:  0 1px 5px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-transition: height 2s, width 2s, margin 2s;
+  -ms-box-shadow:  0 1px 5px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -ms-transition: height 2s, width 2s, margin 2s;
 }
 
 .afterPortPage ul img {
@@ -117,9 +150,18 @@
   width: 300px;
   border-radius: 10px;
   margin: 0px 20px 0px;
+  box-shadow:  0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  transition: height 2s, width 2s, margin 2s;
+  transition-delay: 1s;
   -webkit-box-shadow:  0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   -webkit-transition: height 2s, width 2s, margin 2s;
   -webkit-transition-delay: 1s;
+  -moz-box-shadow:  0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-transition: height 2s, width 2s, margin 2s;
+  -moz-transition-delay: 1s;
+  -ms-box-shadow:  0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -ms-transition: height 2s, width 2s, margin 2s;
+  -ms-transition-delay: 1s;
 }
 
 /* Back Pulse */
@@ -145,12 +187,18 @@
   font-size: 30px;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
+  -moz-transform: perspective(1px) translateZ(0);
+  -ms-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   overflow: hidden;
   -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -ms-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-property: color, background-color;
+  -moz-transition-property: color, background-color;
+  -ms-transition-property: color, background-color;
   transition-property: color, background-color;
 }
 
