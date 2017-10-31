@@ -1,3 +1,147 @@
+@media (max-width: 500px) {
+  .portGuessMainBlock .beforeGuessLine {
+    height: 0px;
+    margin-top: 50px;
+  }
+  .portGuessMainBlock .afterGuessLine {
+    height: 75px;
+    margin-top: 50px;
+  }
+  .portGuessMainBlock .beforeGuessLine p {
+    width: 100%;
+    font-size: 90px;
+    letter-spacing: 10px;
+    margin-top: 0px;
+  }
+  .portGuessMainBlock .afterGuessLine p {
+    width: 100%;
+    font-size: 90px;
+    letter-spacing: 10px;
+    margin-top: 0px;
+  }
+  .portGuessMainBlock .afterGuessPage {
+    height: 620px;
+  }
+  .portGuessMainBlock .beforeGuessPage .innerBlock {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 0px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .portGuessMainBlock .afterGuessPage .innerBlock {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .portGuessMainBlock #GuPicture {
+    height: auto;
+    width: 300px;
+    margin-top: -25px;
+  }
+  .portGuessMainBlock .beforeGuessPage #iconGit {
+    height: 40px;
+  }
+  .portGuessMainBlock.beforeGuessPage #iconHer {
+    height: 40px;
+  }
+  .portGuessMainBlock .afterGuessPage #iconGit {
+    height: 40px;
+  }
+  .portGuessMainBlock .afterGuessPage #iconHer {
+    height: 40px;
+  }
+  .portGuessMainBlock .beforeGuessPage .innerBlock .right {
+    margin-top: 100px;
+    height: 100px;
+    width: 100%;
+    border-left: 0px solid black;
+    -webkit-transition: height 2s;
+  }
+  .portGuessMainBlock .afterGuessPage .innerBlock .right {
+    margin-top: 100px;
+    height: 100px;
+    width: 100%;
+    border-left: 0px solid black;
+    -webkit-transition: height 2s;
+  }
+  .portGuessMainBlock .beforeGuessPage .innerBlock .right .descript {
+    height: 200px;
+    width: 100%;
+    z-index: -1;
+  }
+  .portGuessMainBlock .afterGuessPage .innerBlock .right .descript {
+    height: 200px;
+    width: 100%;
+    z-index: -1;
+  }
+  .portGuessMainBlock .beforeGuessPage .innerBlock .right .descript h1 {
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    padding-left: 0px;
+    margin-bottom: -10px;
+  }
+  .portGuessMainBlock .afterGuessPage .innerBlock .right .descript h1 {
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    padding-left: 0px;
+    margin-bottom: -10px;
+  }
+  .portGuessMainBlock .beforeGuessPage .innerBlock .right .descript p {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 20px;
+    padding-left: 0px;
+  }
+  .portGuessMainBlock .afterGuessPage .innerBlock .right .descript p {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 20px;
+    padding-left: 0px;
+  }
+  .portGuessMainBlock .beforeGuessPage .innerBlock .right .tech {
+    height: 150px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .portGuessMainBlock .afterGuessPage .innerBlock .right .tech {
+    height: 150px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .portGuessMainBlock .beforeGuessPage .innerBlock .right .tech h1 {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding-right: 0px;
+    margin-bottom: -10px;
+  }
+  .portGuessMainBlock .afterGuessPage .innerBlock .right .tech h1 {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding-right: 0px;
+    margin-bottom: -10px;
+  }
+  .portGuessMainBlock .beforeGuessPage .innerBlock .right .tech p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-right: 0px;
+  }
+  .portGuessMainBlock .afterGuessPage .innerBlock .right .tech p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-right: 0px;
+  }
+}
+
+/*end of media query*/
 .beforeGuessLine {
   height: 0px;
   width: 100%;
@@ -124,27 +268,27 @@
 .beforeGuessPage .innerBlock {
   display: inline-flex;
   flex-direction: row;
-  justify-content: space-center;
+  justify-content: space-between;
   height: 0px;
   margin-top: 15px;
   width: 100%;
-  transition: height 2s, visibility 2s;
-  -webkit-transition: height 2s, visibility 2s;
-  -moz-transition: height 2s, visibility 2s;
-  -ms-transition: height 2s, visibility 2s;
+  transition: height 2s;
+  -webkit-transition: height 2s;
+  -moz-transition: height 2s;
+  -ms-transition: height 2s;
 }
 
 .afterGuessPage .innerBlock {
   display: inline-flex;
   flex-direction: row;
-  justify-content: space-center;
+  justify-content: space-between;
   margin-top: 15px;
   height: 400px;
   width: 100%;
 }
 
 .beforeGuessPage .innerBlock .left {
-display: inline-flex;
+  display: inline-flex;
   flex-direction: column;
   position: relative;
   margin-top: 15px;

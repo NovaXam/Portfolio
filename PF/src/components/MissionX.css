@@ -1,3 +1,151 @@
+@media (max-width: 500px) {
+  .portMissMainBlock .beforeMissionXLine {
+    height: 0px;
+  }
+  .portMissMainBlock .afterMissionXLine {
+    height: 75px;
+  }
+  .portMissMainBlock .beforeMissionXLine p {
+    width: 100%;
+    font-size: 70px;
+    letter-spacing: 5px;
+    margin-top: 15px;
+  }
+  .portMissMainBlock .afterMissionXLine p {
+    width: 100%;
+    font-size: 70px;
+    letter-spacing: 5px;
+    margin-top: 15px;
+  }
+  .portMissMainBlock .afterMissionXPage {
+    height: 620px;
+  }
+  .portMissMainBlock .beforeMissionXPage .innerBlock {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 0px;
+    margin-top: -10px;
+    width: 100%;
+  }
+  .portMissMainBlock .afterMissionXPage .innerBlock {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 450px;
+    margin-top: -10px;
+    width: 100%;
+  }
+  .portMissMainBlock #MissPicture {
+    height: auto;
+    width: 300px;
+    margin-top: -25px;
+  }
+  .portMissMainBlock .beforeMissionXPage .innerBlock .left .icons {
+    margin: -10px auto 0px;
+  }
+  .portMissMainBlock .afterMissionXPage .innerBlock .left .icons {
+    margin: -10px auto 0px;
+  }
+  .portMissMainBlock .beforeMissionXPage #iconGit {
+    height: 40px;
+  }
+  .portMissMainBlock .beforeMissionXPage #iconHer {
+    height: 40px;
+  }
+  .portMissMainBlock .afterMissionXPage #iconGit {
+    height: 40px;
+  }
+  .portMissMainBlock .afterMissionXPage #iconHer {
+    height: 40px;
+  }
+  .portMissMainBlock .beforeMissionXPage .innerBlock .right {
+    margin-top: -100px;
+    height: 100px;
+    width: 100%;
+    border-left: 0px solid black;
+    -webkit-transition: height 2s;
+  }
+  .portMissMainBlock .afterMissionXPage .innerBlock .right {
+    margin-top: -100px;
+    height: 100px;
+    width: 100%;
+    border-left: 0px solid black;
+    -webkit-transition: height 2s;
+  }
+  .portMissMainBlock .beforeMissionXPage .innerBlock .right .descript {
+    height: 200px;
+    width: 100%;
+    z-index: -1;
+  }
+  .portMissMainBlock .afterMissionXPage .innerBlock .right .descript {
+    height: 200px;
+    width: 100%;
+    z-index: -1;
+  }
+  .portMissMainBlock .beforeMissionXPage .innerBlock .right .descript h1 {
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    padding-left: 0px;
+    margin-bottom: -10px;
+  }
+  .portMissMainBlock .afterMissionXPage .innerBlock .right .descript h1 {
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    padding-left: 0px;
+    margin-bottom: -10px;
+  }
+  .portMissMainBlock .beforeMissionXPage .innerBlock .right .descript p {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 20px;
+    padding-left: 0px;
+  }
+  .portMissMainBlock .afterMissionXPage .innerBlock .right .descript p {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 20px;
+    padding-left: 0px;
+  }
+  .portMissMainBlock .beforeMissionXPage .innerBlock .right .tech {
+    height: 150px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .portMissMainBlock .afterMissionXPage .innerBlock .right .tech {
+    height: 150px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .portMissMainBlock .beforeMissionXPage .innerBlock .right .tech h1 {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding-right: 0px;
+    margin-bottom: -10px;
+  }
+  .portMissMainBlock .afterMissionXPage .innerBlock .right .tech h1 {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding-right: 0px;
+    margin-bottom: -10px;
+  }
+  .portMissMainBlock .beforeMissionXPage .innerBlock .right .tech p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-right: 0px;
+  }
+  .portMissMainBlock .afterMissionXPage .innerBlock .right .tech p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-right: 0px;
+  }
+}
+
+/*end media query*/
 .beforeMissionXLine {
   height: 0px;
   width: 100%;

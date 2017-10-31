@@ -1,3 +1,151 @@
+@media (max-width: 500px) {
+  .portMonMainBlock .beforeMonsterLine {
+    height: 0px;
+  }
+  .portMonMainBlock .afterMonsterLine {
+    height: 75px;
+  }
+  .portMonMainBlock .beforeMonsterLine p {
+    width: 100%;
+    font-size: 70px;
+    letter-spacing: 0px;
+    margin-top: 15px;
+  }
+  .portMonMainBlock .afterMonsterLine p {
+    width: 100%;
+    font-size: 70px;
+    letter-spacing: 0px;
+    margin-top: 15px;
+  }
+  .portMonMainBlock .afterMonsterPage {
+    height: 620px;
+  }
+  .portMonMainBlock .beforeMonsterPage .innerBlock {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 0px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .portMonMainBlock .afterMonsterPage .innerBlock {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 425px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .portMonMainBlock #mmPicture {
+    height: auto;
+    width: 300px;
+    margin-top: -25px;
+  }
+  .portMonMainBlock .beforeMonsterPage .innerBlock .left .icons {
+    margin: -10px auto 0px;
+  }
+  .portMonMainBlock .afterMonsterPage .innerBlock .left .icons {
+    margin: -10px auto 0px;
+  }
+  .portMonMainBlock .beforeMonsterPage #iconGit {
+    height: 40px;
+  }
+  .portMonMainBlock .beforeMonsterPage #iconHer {
+    height: 40px;
+  }
+  .portMonMainBlock .afterMonsterPage #iconGit {
+    height: 40px;
+  }
+  .portMonMainBlock .afterMonsterPage #iconHer {
+    height: 40px;
+  }
+  .portMonMainBlock .beforeMonsterPage .innerBlock .right {
+    margin-top: 00px;
+    height: 100px;
+    width: 100%;
+    border-left: 0px solid black;
+    -webkit-transition: height 2s;
+  }
+  .portMonMainBlock .afterMonsterPage .innerBlock .right {
+    margin-top: 0px;
+    height: 100px;
+    width: 100%;
+    border-left: 0px solid black;
+    -webkit-transition: height 2s;
+  }
+  .portMonMainBlock .beforeMonsterPage .innerBlock .right .descript {
+    height: 200px;
+    width: 100%;
+    z-index: -1;
+  }
+  .portMonMainBlock .afterMonsterPage .innerBlock .right .descript {
+    height: 200px;
+    width: 100%;
+    z-index: -1;
+  }
+  .portMonMainBlock .beforeMonsterPage .innerBlock .right .descript h1 {
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    padding-left: 0px;
+    margin-bottom: -10px;
+  }
+  .portMonMainBlock .afterMonsterPage .innerBlock .right .descript h1 {
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    padding-left: 0px;
+    margin-bottom: -10px;
+  }
+  .portMonMainBlock .beforeMonsterPage .innerBlock .right .descript p {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 20px;
+    padding-left: 0px;
+  }
+  .portMonMainBlock .afterMonsterPage .innerBlock .right .descript p {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 20px;
+    padding-left: 0px;
+  }
+  .portMonMainBlock .beforeMonsterPage .innerBlock .right .tech {
+    height: 150px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .portMonMainBlock .afterMonsterPage .innerBlock .right .tech {
+    height: 150px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .portMonMainBlock .beforeMonsterPage .innerBlock .right .tech h1 {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding-right: 0px;
+    margin-bottom: -10px;
+  }
+  .portMonMainBlock .afterMonsterPage .innerBlock .right .tech h1 {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding-right: 0px;
+    margin-bottom: -10px;
+  }
+  .portMonMainBlock .beforeMonsterPage .innerBlock .right .tech p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-right: 0px;
+  }
+  .portMonMainBlock .afterMonsterPage .innerBlock .right .tech p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-right: 0px;
+  }
+}
+
+/*end media query*/
 .beforeMonsterLine {
   height: 0px;
   width: 100%;

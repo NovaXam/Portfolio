@@ -117,6 +117,7 @@ class App extends Component {
   }
 
   async handlerAboutListener(event) {
+    console.log(window.screen.width);
     try {
       const prev = await event.preventDefault();
       const stateClass = await this.setState({
@@ -134,7 +135,7 @@ class App extends Component {
             marginBottom: '15px',
             transition: 'height 2s, margin-bottom 2s',
           },
-        })
+        });
       } else {
         this.setState({
           scaleAbout: {
@@ -162,15 +163,31 @@ class App extends Component {
       const state = await this.setState({
         portLine: 'afterPortLine',
         portPage: 'afterPortPage',
-        scalePortfolio: {
-          height: '250px',
-          width: '250px',
+      })
+      if(window.screen.width <= 500) {
+        this.setState({
+          scalePortfolio: {
+            height: '100px',
+            width: 'auto',
+          },
+          height: {
+            height: '300px',
+            marginBottom: '15px',
+            transition: 'height 2s, margin-bottom 2s',
+          },
+        });
+      } else {
+        this.setState({
+          scalePortfolio: {
+            height: '250px',
+            width: '250px',
         },
-        height: {
-          height: '600px',
-          transition: 'height 2s',
+          height: {
+            height: '600px',
+            transition: 'height 2s',
         },
       });
+    }
       scroller.scrollTo('Portfolio', {
         smooth: true,
       });

@@ -9,7 +9,6 @@ import ga from '../assets/Icons/iconsGA.png';
 
 const About = (props) => {
   const Element = Scroll.Element;
-  // const scroller = Scroll.scroller;
 
   return (
     <Element name="About">

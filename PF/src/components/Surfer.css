@@ -1,3 +1,151 @@
+@media (max-width: 500px) {
+  .portSurfMainBlock .beforeSurferLine {
+    height: 0px;
+  }
+  .portSurfMainBlock .afterSurferLine {
+    height: 75px;
+  }
+  .portSurfMainBlock .beforeSurferLine p {
+    width: 100%;
+    font-size: 80px;
+    letter-spacing: 0px;
+    margin-top: 10px;
+  }
+  .portSurfMainBlock .afterSurferLine p {
+    width: 100%;
+    font-size: 80px;
+    letter-spacing: 0px;
+    margin-top: 10px;
+  }
+  .portSurfMainBlock .afterSurferPage {
+    height: 620px;
+  }
+  .portSurfMainBlock .beforeSurferPage .innerBlock {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 0px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .portSurfMainBlock .afterSurferPage .innerBlock {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 425px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .portSurfMainBlock #SurfPicture {
+    height: auto;
+    width: 300px;
+    margin-top: -25px;
+  }
+  .portSurfMainBlock .beforeSurferPage .innerBlock .left .icons {
+    margin: -10px auto 0px;
+  }
+  .portSurfMainBlock .afterSurferPage .innerBlock .left .icons {
+    margin: -10px auto 0px;
+  }
+  .portSurfMainBlock .beforeSurferPage #iconGit {
+    height: 40px;
+  }
+  .portSurfMainBlock .beforeSurferPage #iconHer {
+    height: 40px;
+  }
+  .portSurfMainBlock .afterSurferPage #iconGit {
+    height: 40px;
+  }
+  .portSurfMainBlock .afterSurferPage #iconHer {
+    height: 40px;
+  }
+  .portSurfMainBlock .beforeSurferPage .innerBlock .right {
+    margin-top: -75px;
+    height: 100px;
+    width: 100%;
+    border-left: 0px solid black;
+    -webkit-transition: height 2s;
+  }
+  .portSurfMainBlock .afterSurferPage .innerBlock .right {
+    margin-top: -75px;
+    height: 100px;
+    width: 100%;
+    border-left: 0px solid black;
+    -webkit-transition: height 2s;
+  }
+  .portSurfMainBlock .beforeSurferPage .innerBlock .right .descript {
+    height: 200px;
+    width: 100%;
+    z-index: -1;
+  }
+  .portSurfMainBlock .afterSurferPage .innerBlock .right .descript {
+    height: 200px;
+    width: 100%;
+    z-index: -1;
+  }
+  .portSurfMainBlock .beforeSurferPage .innerBlock .right .descript h1 {
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    padding-left: 0px;
+    margin-bottom: -10px;
+  }
+  .portSurfMainBlock .afterSurferPage .innerBlock .right .descript h1 {
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    padding-left: 0px;
+    margin-bottom: -10px;
+  }
+  .portSurfMainBlock .beforeSurferPage .innerBlock .right .descript p {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 20px;
+    padding-left: 0px;
+  }
+  .portSurfMainBlock .afterSurferPage .innerBlock .right .descript p {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 20px;
+    padding-left: 0px;
+  }
+  .portSurfMainBlock .beforeSurferPage .innerBlock .right .tech {
+    height: 150px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .portSurfMainBlock .afterSurferPage .innerBlock .right .tech {
+    height: 150px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .portSurfMainBlock .beforeSurferPage .innerBlock .right .tech h1 {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding-right: 0px;
+    margin-bottom: -10px;
+  }
+  .portSurfMainBlock .afterSurferPage .innerBlock .right .tech h1 {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding-right: 0px;
+    margin-bottom: -10px;
+  }
+  .portSurfMainBlock .beforeSurferPage .innerBlock .right .tech p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-right: 0px;
+  }
+  .portSurfMainBlock .afterSurferPage .innerBlock .right .tech p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-right: 0px;
+  }
+}
+
+/*end media query*/
 .beforeSurferLine {
   height: 0px;
   width: 100%;

@@ -1,3 +1,48 @@
+@media (max-width: 500px) {
+  .portMainBlock .afterPortLine {
+    height: 100px;
+  }
+  .portMainBlock .beforePortLine p {
+    font-size: 90px;
+    letter-spacing: 15px;
+    margin-top: 25px;
+  }
+  .portMainBlock .afterPortLine p {
+    font-size: 90px;
+    letter-spacing: 15px;
+    margin-top: 25px;
+  }
+  .portMainBlock .afterPortPage {
+    height: 250px;
+  }
+  .portMainBlock .beforePortPage ul li {
+    height: 150px;
+    width: 130px;
+  }
+  .portMainBlock .afterPortPage ul li {
+    height: 150px;
+    width: 130px;
+  }
+  .portMainBlock .beforePortPage ul img {
+    height: 125px;
+    width: 125px;
+  }
+  .portMainBlock .afterPortPage ul img {
+    height: 125px;
+    width: 125px;
+  }
+  .portMainBlock .hvr-back-pulse {
+    height: 128px;
+    width: 128px;
+    left: -146px;
+    top: -60px;
+  }
+  .portMainBlock .hvr-back-pulse h1 {
+    margin: 58px auto;
+    font-size: 14px;
+  }
+}
+/*end of media query*/
 .beforePortLine {
   height: 0px;
   width: 100%;

@@ -10,11 +10,11 @@ import red from '../assets/buttons_red.png';
 const MainPage = (props) => {
   return (
     <main className='mainBlock'>
-      <div id="logoBlock" className={props.logoMain}>
-        <img id="logoMain" src={logo} alt="logo" onClick={props.handleMainListener} />
+      <div className={props.logoMain}>
+        <img src={logo} alt="logo" onClick={props.handleMainListener} />
       </div>
       <div className={props.menuState}>
-        <div id="linesMain" className='lines'>
+        <div className="lines">
           <p>MENU</p>
         </div>
         <div className='categories'>

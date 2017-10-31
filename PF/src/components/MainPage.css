@@ -1,32 +1,31 @@
 @media (max-width: 500px) {
-  .beforeLogo #logoMain {
+  .mainBlock .beforeLogo img {
     height: 150px;
     width: auto;
     z-index: 1;
   }
-  .afterLogo #logoMain {
+  .mainBlock .afterLogo img {
     height: 125px;
     width: auto;
     z-index: 1;
   }
-  .afterClickMenu {
-    height: 300px;
+  .mainBlock .afterClickMenu {
+    height: 220px;
   }
-
-  .afterClickMenu #linesMain {
+  .mainBlock .afterClickMenu .lines {
     display: inline-block;
     position: relative;
     height: 100px;
     width: 100%;
   }
-  .beforeClickMenu #linesMain p {
+  .mainBlock .beforeClickMenu .lines p {
     width: 100%;
     font-size: 100px;
     letter-spacing: 20px;
     margin-top: 20px;
     margin-left: 10px;
   }
-  .afterClickMenu #linesMain p {
+  .mainBlock .afterClickMenu .lines p {
     width: 100%;
     font-size: 100px;
     letter-spacing: 20px;
@@ -41,30 +40,22 @@
     padding-left: 0px;
     width: 100%;
   }
-  #about {
-    height: 75px;
+  .beforeClickMenu .categories ul li img {
+    height: 85px;
     width: auto;
-    margin: 0px 5px 0px;
+    margin: 0px 0px;
   }
-  #read {
-    height: 75px;
+  .afterClickMenu .categories ul li img {
+    height: 85px;
     width: auto;
-    margin: 0px 5px 0px;
+    margin: 0px 0px;
   }
-  #works {
-    height: 75px;
-    width: auto;
-    margin: 0px 5px 0px;
+  .mainBlock .afterClickMenu .categories ul li img:hover {
+    height: 115px;
+    width: 115px;
   }
-  #info {
-    height: 75px;
-    width: auto;
-    margin: 0px 5px 0px;
-  }
-  /*#afterMenuBlock {
-    height: 200px;
-  }*/
 }
+/*end of media query*/
 
 .mainBlock {
   display: inline-block;
