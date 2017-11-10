@@ -32,27 +32,33 @@
     margin-top: 20px;
     margin-left: 10px;
   }
-  .beforeClickMenu #catId {
+  .mainBlock .beforeClickMenu #catId {
     padding-left: 0px;
     width: 100%;
   }
-  .afterClickMenu #catId {
+  .mainBlock .afterClickMenu #catId {
     padding-left: 0px;
     width: 100%;
   }
-  .beforeClickMenu .categories ul li img {
+  .mainBlock .beforeClickMenu .categories {
+    height: 100px;
+  }
+  .mainBlock .afterClickMenu .categories {
+    height: 100px;
+  }
+  .mainBlock .beforeClickMenu .categories ul li img {
     height: 85px;
     width: auto;
     margin: 0px 0px;
   }
-  .afterClickMenu .categories ul li img {
+  .mainBlock .afterClickMenu .categories ul li img {
     height: 85px;
     width: auto;
     margin: 0px 0px;
   }
   .mainBlock .afterClickMenu .categories ul li img:hover {
     height: 115px;
-    width: 115px;
+    width: auto;
   }
 }
 /*end of media query*/

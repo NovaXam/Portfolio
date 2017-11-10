@@ -11,8 +11,8 @@ const About = (props) => {
   const Element = Scroll.Element;
 
   return (
-    <Element name="About">
-      <div className="aboutMainBlock" style={props.heightAbout}>
+    <Element name="About" style={props.heightAbout}>
+      <div className="aboutMainBlock">
         <div className={props.aboutLine}>
           <p>ABOUT</p>
         </div>
@@ -22,7 +22,7 @@ const About = (props) => {
             <div className="left">
               <p>Hi! My name is Maksym, and I'm passionate software developer with
                  an eye for design.
-                 I enjoy all aspects of web development, but I'm most interested in back-end technology.
+                 I enjoy all aspects of web development, front-end and back-end technologies as well.
               </p>
             </div>
             <img id="photo" alt="photoMe" src={me} />

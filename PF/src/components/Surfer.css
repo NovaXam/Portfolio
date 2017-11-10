@@ -7,15 +7,15 @@
   }
   .portSurfMainBlock .beforeSurferLine p {
     width: 100%;
-    font-size: 80px;
+    font-size: 70px;
     letter-spacing: 0px;
-    margin-top: 10px;
+    margin-top: 15px;
   }
   .portSurfMainBlock .afterSurferLine p {
     width: 100%;
-    font-size: 80px;
+    font-size: 70px;
     letter-spacing: 0px;
-    margin-top: 10px;
+    margin-top: 15px;
   }
   .portSurfMainBlock .afterSurferPage {
     height: 620px;
@@ -101,13 +101,13 @@
     font-size: 18px;
     font-weight: 200;
     line-height: 20px;
-    padding-left: 0px;
+    padding: 0px 10px 0px 10px;
   }
   .portSurfMainBlock .afterSurferPage .innerBlock .right .descript p {
     font-size: 18px;
     font-weight: 200;
     line-height: 20px;
-    padding-left: 0px;
+    padding: 0px 10px 0px 10px;
   }
   .portSurfMainBlock .beforeSurferPage .innerBlock .right .tech {
     height: 150px;
@@ -123,25 +123,25 @@
     font-size: 20px;
     font-weight: 200;
     letter-spacing: 2px;
-    padding-right: 0px;
+    padding: 0px;
     margin-bottom: -10px;
   }
   .portSurfMainBlock .afterSurferPage .innerBlock .right .tech h1 {
     font-size: 20px;
     font-weight: 200;
     letter-spacing: 2px;
-    padding-right: 0px;
+    padding: 0px;
     margin-bottom: -10px;
   }
   .portSurfMainBlock .beforeSurferPage .innerBlock .right .tech p {
     font-size: 18px;
     letter-spacing: 1px;
-    padding-right: 0px;
+    padding: 0px;
   }
   .portSurfMainBlock .afterSurferPage .innerBlock .right .tech p {
     font-size: 18px;
     letter-spacing: 1px;
-    padding-right: 0px;
+    padding: 0px;
   }
 }
 
@@ -461,7 +461,6 @@
   position: relative;
   height: 200px;
   width: 100%;
-  margin-left: 40px;
   border-top: 1px solid black;
   text-align: center;
 }
@@ -471,7 +470,6 @@
   position: relative;
   height: 200px;
   width: 100%;
-  margin-left: 40px;
   border-top: 1px solid black;
   text-align: center;
 }
@@ -481,7 +479,7 @@
   font-family: 'helvetica';
   font-weight: 300;
   letter-spacing: 3px;
-  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .afterSurferPage .innerBlock .right .tech h1 {
@@ -489,7 +487,7 @@
   font-family: 'helvetica';
   font-weight: 300;
   letter-spacing: 3px;
-  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .beforeSurferPage .innerBlock .right .tech p {
@@ -499,7 +497,7 @@
   font-variant: small-caps;
   letter-spacing: 2px;
   text-align: center;
-  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .afterSurferPage .innerBlock .right .tech p {
@@ -508,5 +506,5 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-variant: small-caps;
   letter-spacing: 2px;
-  padding-right: 40px;
+  padding-left: 40px;
 }

@@ -3,14 +3,14 @@
     height: 100px;
   }
   .portMainBlock .beforePortLine p {
-    font-size: 90px;
-    letter-spacing: 15px;
-    margin-top: 25px;
+    font-size: 80px;
+    letter-spacing: 10px;
+    margin-top: 30px;
   }
   .portMainBlock .afterPortLine p {
-    font-size: 90px;
-    letter-spacing: 15px;
-    margin-top: 25px;
+    font-size: 80px;
+    letter-spacing: 10px;
+    margin-top: 30px;
   }
   .portMainBlock .afterPortPage {
     height: 250px;

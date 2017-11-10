@@ -22,7 +22,7 @@ const MissionX = (props) => {
                 <div className="mainPic"><img id='MissPicture' src={MissionXpage} alt="pictureBlockMis" /></div>
                 <div className="icons">
                   <a href="https://github.com/NovaXam/MissionX" target="blank"><img id="iconGit" src={iconsGit} alt="iconToLinkMiss" /></a>
-                  <a href="#"><img id="iconHer" src={iconsHeroku} alt="iconToHerMiss" /></a>
+                  <a href="https://missionmarsx.herokuapp.com" target="blank"><img id="iconHer" src={iconsHeroku} alt="iconToHerMiss" /></a>
                 </div>
               </div>
               <div className="right">

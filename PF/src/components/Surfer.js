@@ -21,8 +21,8 @@ const Surfer = (props) => {
           <div className="left">
               <div className="mainPic"><img id="SurfPicture" src={Surferpage} alt="surfPic" /></div>
               <div className="icons">
-                <a href="https://github.com/NovaXam/project-2-express" target="blank"><img id="iconGit" src={iconsGit} alt="linkToGitSurf"/></a>
-                <a href="#"><img id="iconHer" src={iconsHeroku} alt="linkToHerSurf" /></a>
+                <a href="https://github.com/NovaXam/sightseeings" target="blank"><img id="iconGit" src={iconsGit} alt="linkToGitSurf"/></a>
+                <a href="https://sightseeings.herokuapp.com/sights" target="blank"><img id="iconHer" src={iconsHeroku} alt="linkToHerSurf" /></a>
               </div>
             </div>
             <div className="right">

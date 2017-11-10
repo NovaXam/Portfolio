@@ -7,39 +7,46 @@
   }
   .portMissMainBlock .beforeMissionXLine p {
     width: 100%;
-    font-size: 70px;
+    font-size: 60px;
     letter-spacing: 5px;
-    margin-top: 15px;
+    margin-top: 25px;
   }
   .portMissMainBlock .afterMissionXLine p {
     width: 100%;
-    font-size: 70px;
+    font-size: 60px;
     letter-spacing: 5px;
-    margin-top: 15px;
+    margin-top: 25px;
   }
   .portMissMainBlock .afterMissionXPage {
-    height: 620px;
+    height: 675px;
   }
   .portMissMainBlock .beforeMissionXPage .innerBlock {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     height: 0px;
-    margin-top: -10px;
+    margin-top: 0px;
     width: 100%;
   }
   .portMissMainBlock .afterMissionXPage .innerBlock {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
-    height: 450px;
-    margin-top: -10px;
+    height: 675px;
+    margin-top: 0px;
     width: 100%;
   }
   .portMissMainBlock #MissPicture {
     height: auto;
     width: 300px;
-    margin-top: -25px;
+  }
+  .portMissMainBlock .beforeMissionXPage .innerBlock .left {
+    height: 250px;
+    margin-top: 0px;
+  }
+  .portMissMainBlock .afterMissionXPage .innerBlock .left {
+    height: 250px;
+    margin-top: 0px;
   }
   .portMissMainBlock .beforeMissionXPage .innerBlock .left .icons {
     margin: -10px auto 0px;
@@ -60,26 +67,30 @@
     height: 40px;
   }
   .portMissMainBlock .beforeMissionXPage .innerBlock .right {
-    margin-top: -100px;
-    height: 100px;
+    margin-top: 0px;
+    margin: 0px;
+    height: 400px;
     width: 100%;
     border-left: 0px solid black;
     -webkit-transition: height 2s;
   }
   .portMissMainBlock .afterMissionXPage .innerBlock .right {
-    margin-top: -100px;
-    height: 100px;
+    margin-top: 0px;
+    margin: 0px;
+    height: 400px;
     width: 100%;
     border-left: 0px solid black;
     -webkit-transition: height 2s;
   }
   .portMissMainBlock .beforeMissionXPage .innerBlock .right .descript {
-    height: 200px;
+    margin-top: 0px;
+    height: 250px;
     width: 100%;
     z-index: -1;
   }
   .portMissMainBlock .afterMissionXPage .innerBlock .right .descript {
-    height: 200px;
+    margin-top: 0px;
+    height: 250px;
     width: 100%;
     z-index: -1;
   }
@@ -102,12 +113,14 @@
     font-weight: 200;
     line-height: 20px;
     padding-left: 0px;
+    padding: 0px 20px;
   }
   .portMissMainBlock .afterMissionXPage .innerBlock .right .descript p {
     font-size: 18px;
     font-weight: 200;
     line-height: 20px;
     padding-left: 0px;
+    padding: 0px 20px;
   }
   .portMissMainBlock .beforeMissionXPage .innerBlock .right .tech {
     height: 150px;
@@ -123,25 +136,26 @@
     font-size: 20px;
     font-weight: 200;
     letter-spacing: 2px;
-    padding-right: 0px;
+    padding: 0px;
     margin-bottom: -10px;
   }
   .portMissMainBlock .afterMissionXPage .innerBlock .right .tech h1 {
     font-size: 20px;
     font-weight: 200;
     letter-spacing: 2px;
-    padding-right: 0px;
+    padding: 0px;
     margin-bottom: -10px;
   }
   .portMissMainBlock .beforeMissionXPage .innerBlock .right .tech p {
     font-size: 18px;
     letter-spacing: 1px;
-    padding-right: 0px;
+    padding: 0px 0px;
   }
   .portMissMainBlock .afterMissionXPage .innerBlock .right .tech p {
     font-size: 18px;
     letter-spacing: 1px;
-    padding-right: 0px;
+    padding-left: 0px;
+    padding: 0px 0px;
   }
 }
 
@@ -459,7 +473,6 @@
   position: relative;
   height: 200px;
   width: 100%;
-  margin-left: 40px;
   border-top: 1px solid black;
   text-align: center;
 }
@@ -469,7 +482,6 @@
   position: relative;
   height: 200px;
   width: 100%;
-  margin-left: 40px;
   border-top: 1px solid black;
   text-align: center;
 }
@@ -479,7 +491,7 @@
   font-family: 'helvetica';
   font-weight: 300;
   letter-spacing: 3px;
-  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .afterMissionXPage .innerBlock .right .tech h1 {
@@ -487,7 +499,7 @@
   font-family: 'helvetica';
   font-weight: 300;
   letter-spacing: 3px;
-  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .beforeMissionXPage .innerBlock .right .tech p {
@@ -497,7 +509,7 @@
   font-variant: small-caps;
   letter-spacing: 2px;
   text-align: center;
-  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .afterMissionXPage .innerBlock .right .tech p {
@@ -506,5 +518,5 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-variant: small-caps;
   letter-spacing: 2px;
-  padding-right: 40px;
+  padding-left: 40px;
 }

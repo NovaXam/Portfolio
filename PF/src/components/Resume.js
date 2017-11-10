@@ -9,7 +9,7 @@ const Element = Scroll.Element;
 
 const Resume = (props) => {
   return (
-    <Element name="Resume">
+    <Element name="Resume" >
       <div className="resumeMainBlock">
         <div className={props.resumeLine}>
           <p>CONTACT</p>

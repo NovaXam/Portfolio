@@ -117,7 +117,6 @@ class App extends Component {
   }
 
   async handlerAboutListener(event) {
-    console.log(window.screen.width);
     try {
       const prev = await event.preventDefault();
       const stateClass = await this.setState({
@@ -131,8 +130,8 @@ class App extends Component {
             width: 'auto',
           },
           heightAbout: {
-            height: '300px',
-            marginBottom: '15px',
+            height: '625px',
+            marginBottom: '0px',
             transition: 'height 2s, margin-bottom 2s',
           },
         });
@@ -163,7 +162,7 @@ class App extends Component {
       const state = await this.setState({
         portLine: 'afterPortLine',
         portPage: 'afterPortPage',
-      })
+      });
       if(window.screen.width <= 500) {
         this.setState({
           scalePortfolio: {
@@ -205,11 +204,22 @@ class App extends Component {
         workPointerGuess: {
           backgroundColor: 'rgba(32,152,209,0.8)',
         },
-        heightGuess: {
-          height: '675px',
-          transition: 'height 2s',
-        },
-    });
+      });
+      if(window.screen.width <= 500) {
+        this.setState({
+          heightGuess: {
+            height: '735px',
+            transition: 'height 2s',
+          },
+        });
+      } else {
+        this.setState({
+          heightGuess: {
+            height: '675px',
+            transition: 'height 2s',
+          },
+        });
+      }
     scroller.scrollTo('Guess', {
         smooth: true,
       });
@@ -227,11 +237,22 @@ class App extends Component {
         workPointerSurf: {
           backgroundColor: 'rgba(32,152,209,0.8)',
         },
-        heightSurfer: {
-          height: '675px',
-          transition: 'height 2s',
-        },
       });
+      if(window.screen.width <= 500) {
+        this.setState({
+          heightSurfer: {
+            height: '695px',
+            transition: 'height 2s',
+          },
+        });
+      } else {
+        this.setState({
+          heightSurfer: {
+            height: '675px',
+            transition: 'height 2s',
+          },
+        });
+      }
       scroller.scrollTo('Surfer', {
         smooth: true,
       });
@@ -249,11 +270,22 @@ class App extends Component {
         workPointerMon: {
           backgroundColor: 'rgba(32,152,209,0.8)',
         },
-        heightMonster: {
-          height: '675px',
-          transition: 'height 2s',
-        },
       });
+      if(window.screen.width <= 500) {
+        this.setState({
+          heightMonster: {
+            height: '710px',
+            transition: 'height 2s',
+          },
+        });
+      } else {
+        this.setState({
+          heightMonster: {
+            height: '675px',
+            transition: 'height 2s',
+          },
+        });
+      }
        scroller.scrollTo('Monster', {
         smooth: true,
       });
@@ -271,11 +303,22 @@ class App extends Component {
         workPointerMiss: {
           backgroundColor: 'rgba(32,152,209,0.8)',
         },
-        heightMissionX: {
-          height: '675px',
-          transition: 'height 2s',
-        },
       });
+      if(window.screen.width <= 500) {
+        this.setState({
+          heightMissionX: {
+            height: '750px',
+            transition: 'height 2s',
+          },
+        });
+      } else {
+        this.setState({
+          heightMissionX: {
+            height: '675px',
+            transition: 'height 2s',
+          },
+        });
+      }
       scroller.scrollTo('MissionX', {
         smooth: true,
       });
@@ -285,21 +328,36 @@ class App extends Component {
   }
 
   async handlerSourceListener(event) {
-    console.log(window.screen.availHeight);
     try {
       const prev = await event.preventDefault();
       const state = await this.setState({
         sourceLine: 'afterSourceLine',
         sourcePage: 'afterSourcePage',
-        scaleSource: {
-          height: '250px',
-          width: '250px',
+        });
+      if(window.screen.width <= 500) {
+        this.setState({
+          scaleSource: {
+            height: '100px',
+            width: 'auto',
+          },
+          heightSource: {
+            height: '775px',
+            transition: 'height 2s',
+            marginBottom: '35px',
         },
-        heightSource: {
-        height: '600px',
-        transition: 'height 2s',
-      },
+        });
+      } else {
+        this.setState({
+          scaleSource: {
+            height: '250px',
+            width: '250px',
+        },
+          heightSource: {
+            height: '600px',
+            transition: 'height 2s',
+        },
       });
+    }
       scroller.scrollTo('Source', {
         smooth: true,
       });
@@ -314,11 +372,22 @@ class App extends Component {
       const state = await this.setState({
         resumeLine: 'afterResumeLine',
         resumePage: 'afterResumePage',
-        scaleResume: {
-          height: '250px',
-          width: '250px',
-        },
       });
+      if(window.screen.width <= 500) {
+        this.setState({
+          scaleResume: {
+            height: '100px',
+            width: 'auto',
+          },
+        });
+      } else {
+        this.setState({
+          scaleResume: {
+            height: '250px',
+            width: '250px',
+          },
+        });
+      }
       scroller.scrollTo('Resume', {
         smooth: true,
       });

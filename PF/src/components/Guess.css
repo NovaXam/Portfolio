@@ -9,18 +9,18 @@
   }
   .portGuessMainBlock .beforeGuessLine p {
     width: 100%;
-    font-size: 90px;
-    letter-spacing: 10px;
-    margin-top: 0px;
+    font-size: 80px;
+    letter-spacing: 5px;
+    margin-top: 10px;
   }
   .portGuessMainBlock .afterGuessLine p {
     width: 100%;
-    font-size: 90px;
-    letter-spacing: 10px;
-    margin-top: 0px;
+    font-size: 80px;
+    letter-spacing: 5px;
+    margin-top: 10px;
   }
   .portGuessMainBlock .afterGuessPage {
-    height: 620px;
+    height: 660px;
   }
   .portGuessMainBlock .beforeGuessPage .innerBlock {
     display: inline-flex;
@@ -34,7 +34,7 @@
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
-    height: 400px;
+    height: 600px;
     margin-top: 10px;
     width: 100%;
   }
@@ -57,25 +57,25 @@
   }
   .portGuessMainBlock .beforeGuessPage .innerBlock .right {
     margin-top: 100px;
-    height: 100px;
+    height: 435px;
     width: 100%;
     border-left: 0px solid black;
     -webkit-transition: height 2s;
   }
   .portGuessMainBlock .afterGuessPage .innerBlock .right {
     margin-top: 100px;
-    height: 100px;
+    height: 435px;
     width: 100%;
     border-left: 0px solid black;
     -webkit-transition: height 2s;
   }
   .portGuessMainBlock .beforeGuessPage .innerBlock .right .descript {
-    height: 200px;
+    height: 250px;
     width: 100%;
     z-index: -1;
   }
   .portGuessMainBlock .afterGuessPage .innerBlock .right .descript {
-    height: 200px;
+    height: 250px;
     width: 100%;
     z-index: -1;
   }
@@ -98,20 +98,22 @@
     font-weight: 200;
     line-height: 20px;
     padding-left: 0px;
+    padding: 0px 25px;
   }
   .portGuessMainBlock .afterGuessPage .innerBlock .right .descript p {
     font-size: 18px;
     font-weight: 200;
     line-height: 20px;
     padding-left: 0px;
+    padding: 0px 25px;
   }
   .portGuessMainBlock .beforeGuessPage .innerBlock .right .tech {
-    height: 150px;
+    height: 85px;
     width: 100%;
     margin-left: 0px;
   }
   .portGuessMainBlock .afterGuessPage .innerBlock .right .tech {
-    height: 150px;
+    height: 85px;
     width: 100%;
     margin-left: 0px;
   }
@@ -119,25 +121,27 @@
     font-size: 20px;
     font-weight: 200;
     letter-spacing: 2px;
-    padding-right: 0px;
+    padding-left: 0px;
     margin-bottom: -10px;
   }
   .portGuessMainBlock .afterGuessPage .innerBlock .right .tech h1 {
     font-size: 20px;
     font-weight: 200;
     letter-spacing: 2px;
-    padding-right: 0px;
+    padding-left: 0px;
     margin-bottom: -10px;
   }
   .portGuessMainBlock .beforeGuessPage .innerBlock .right .tech p {
     font-size: 18px;
     letter-spacing: 1px;
-    padding-right: 0px;
+    padding-left: 0px;
+    margin: 15px auto;
   }
   .portGuessMainBlock .afterGuessPage .innerBlock .right .tech p {
     font-size: 18px;
     letter-spacing: 1px;
-    padding-right: 0px;
+    padding-left: 0px;
+    margin: 15px auto;
   }
 }
 
@@ -456,7 +460,6 @@
   position: relative;
   height: 200px;
   width: 100%;
-  margin-left: 40px;
   border-top: 1px solid black;
   text-align: center;
 }
@@ -466,7 +469,6 @@
   position: relative;
   height: 200px;
   width: 100%;
-  margin-left: 40px;
   border-top: 1px solid black;
   text-align: center;
 }
@@ -476,7 +478,7 @@
   font-family: 'helvetica';
   font-weight: 300;
   letter-spacing: 3px;
-  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .afterGuessPage .innerBlock .right .tech h1 {
@@ -484,7 +486,7 @@
   font-family: 'helvetica';
   font-weight: 300;
   letter-spacing: 3px;
-  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .beforeGuessPage .innerBlock .right .tech p {
@@ -494,7 +496,7 @@
   font-variant: small-caps;
   letter-spacing: 2px;
   text-align: center;
-  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .afterGuessPage .innerBlock .right .tech p {
@@ -503,5 +505,5 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-variant: small-caps;
   letter-spacing: 2px;
-  padding-right: 40px;
+  padding-left: 40px;
 }

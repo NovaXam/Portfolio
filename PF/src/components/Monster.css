@@ -7,18 +7,18 @@
   }
   .portMonMainBlock .beforeMonsterLine p {
     width: 100%;
-    font-size: 70px;
+    font-size: 60px;
     letter-spacing: 0px;
-    margin-top: 15px;
+    margin-top: 25px;
   }
   .portMonMainBlock .afterMonsterLine p {
     width: 100%;
-    font-size: 70px;
+    font-size: 60px;
     letter-spacing: 0px;
-    margin-top: 15px;
+    margin-top: 25px;
   }
   .portMonMainBlock .afterMonsterPage {
-    height: 620px;
+    height: 630px;
   }
   .portMonMainBlock .beforeMonsterPage .innerBlock {
     display: inline-flex;
@@ -32,14 +32,21 @@
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
-    height: 425px;
+    height: 625px;
     margin-top: 10px;
     width: 100%;
   }
   .portMonMainBlock #mmPicture {
     height: auto;
     width: 300px;
-    margin-top: -25px;
+  }
+  .portMonMainBlock .beforeMonsterPage .innerBlock .left {
+    height: 250px;
+    margin-top: 0px;
+  }
+  .portMonMainBlock .afterMonsterPage .innerBlock .left {
+    height: 250px;
+    margin-top: 0px;
   }
   .portMonMainBlock .beforeMonsterPage .innerBlock .left .icons {
     margin: -10px auto 0px;
@@ -60,25 +67,28 @@
     height: 40px;
   }
   .portMonMainBlock .beforeMonsterPage .innerBlock .right {
-    margin-top: 00px;
-    height: 100px;
+    margin-top: 0px;
+    height: 350px;
     width: 100%;
     border-left: 0px solid black;
     -webkit-transition: height 2s;
   }
   .portMonMainBlock .afterMonsterPage .innerBlock .right {
     margin-top: 0px;
-    height: 100px;
+    height: 350px;
     width: 100%;
     border-left: 0px solid black;
     -webkit-transition: height 2s;
+    margin: 0px 0px 0px 0px;
   }
   .portMonMainBlock .beforeMonsterPage .innerBlock .right .descript {
+    margin: 0px 0px 0px 0px;
     height: 200px;
     width: 100%;
     z-index: -1;
   }
   .portMonMainBlock .afterMonsterPage .innerBlock .right .descript {
+    margin: 0px 0px 0px 0px;
     height: 200px;
     width: 100%;
     z-index: -1;
@@ -101,13 +111,15 @@
     font-size: 18px;
     font-weight: 200;
     line-height: 20px;
-    padding-left: 0px;
+    padding-left: 30px;
+    padding: 0px 30px;
   }
   .portMonMainBlock .afterMonsterPage .innerBlock .right .descript p {
     font-size: 18px;
     font-weight: 200;
     line-height: 20px;
-    padding-left: 0px;
+    padding: 0px 30px;
+    padding-left: 30px;
   }
   .portMonMainBlock .beforeMonsterPage .innerBlock .right .tech {
     height: 150px;
@@ -123,25 +135,25 @@
     font-size: 20px;
     font-weight: 200;
     letter-spacing: 2px;
-    padding-right: 0px;
+    padding-left: 0px;
     margin-bottom: -10px;
   }
   .portMonMainBlock .afterMonsterPage .innerBlock .right .tech h1 {
     font-size: 20px;
     font-weight: 200;
     letter-spacing: 2px;
-    padding-right: 0px;
+    padding-left: 0px;
     margin-bottom: -10px;
   }
   .portMonMainBlock .beforeMonsterPage .innerBlock .right .tech p {
     font-size: 18px;
     letter-spacing: 1px;
-    padding-right: 0px;
+    padding-left: 0px;
   }
   .portMonMainBlock .afterMonsterPage .innerBlock .right .tech p {
     font-size: 18px;
     letter-spacing: 1px;
-    padding-right: 0px;
+    padding-left: 0px;
   }
 }
 
@@ -162,7 +174,7 @@
   font-size: 150px;
   font-family: 'helvetica';
   color: white;
-  letter-spacing: 40px;
+  letter-spacing: 35px;
   margin: 30px auto;
   font-weight: 600;
   color: white;
@@ -172,7 +184,7 @@
   font-size: 150px;
   font-family: 'helvetica';
   color: white;
-  letter-spacing: 40px;
+  letter-spacing: 35px;
   margin: 30px auto;
   font-weight: 600;
   color: white;
@@ -460,7 +472,6 @@
   position: relative;
   height: 200px;
   width: 100%;
-  margin-left: 40px;
   border-top: 1px solid black;
   text-align: center;
 }
@@ -470,7 +481,6 @@
   position: relative;
   height: 200px;
   width: 100%;
-  margin-left: 40px;
   border-top: 1px solid black;
   text-align: center;
 }
@@ -480,7 +490,7 @@
   font-family: 'helvetica';
   font-weight: 300;
   letter-spacing: 3px;
-  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .afterMonsterPage .innerBlock .right .tech h1 {
@@ -488,7 +498,7 @@
   font-family: 'helvetica';
   font-weight: 300;
   letter-spacing: 3px;
-  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .beforeMonsterPage .innerBlock .right .tech p {
@@ -498,7 +508,7 @@
   font-variant: small-caps;
   letter-spacing: 2px;
   text-align: center;
-  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .afterMonsterPage .innerBlock .right .tech p {
@@ -507,5 +517,5 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-variant: small-caps;
   letter-spacing: 2px;
-  padding-right: 40px;
+  padding-left: 40px;
 }

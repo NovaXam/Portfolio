@@ -10,8 +10,8 @@ const Element = Scroll.Element;
 
 const Guess = (props) => {
   return (
-    <Element name="Guess">
-      <div className="portGuessMainBlock" style={props.heightGuess}>
+    <Element name="Guess" style={props.heightGuess}>
+      <div className="portGuessMainBlock">
         <div className={props.portGuessLine}>
           <p>GUESS</p>
         </div>
@@ -22,7 +22,7 @@ const Guess = (props) => {
               <div className="mainPic"><img id="GuPicture" src={Guesspage} alt="guessPic" /></div>
               <div className="icons">
                 <a href="https://github.com/NovaXam/Project_1_GuessAndGo" target="blank"><img id="iconGit" src={iconsGit} alt="linkToProGit" /></a>
-                <a href="#"><img id="iconHer" src={iconsHeroku} alt="linkProHer" /></a>
+                <a href="http://palmist-camel-13533.bitballoon.com" target="blank"><img id="iconHer" src={iconsHeroku} alt="linkProHer" /></a>
               </div>
             </div>
             <div className="right">
