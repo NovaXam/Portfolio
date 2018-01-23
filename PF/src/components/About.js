@@ -2,7 +2,7 @@ import React from 'react';
 import Scroll from 'react-scroll';
 import './About.css';
 import buttonAbout from '../assets/buttonAbout.png';
-import me from '../assets/Icons/Me.png';
+import me from '../assets/Icons/Me1.JPG';
 import linkedIn from '../assets/Icons/iconsLI.png';
 import stackOF from '../assets/Icons/iconsSO.png';
 import ga from '../assets/Icons/iconsGA.png';

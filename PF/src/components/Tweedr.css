@@ -1,0 +1,509 @@
+@media (max-width: 500px) {
+  .portTweedrMainBlock .beforeTweedrLine {
+    height: 0px;
+    margin-top: 50px;
+  }
+  .portTweedrMainBlock .afterTweedrLine {
+    height: 75px;
+    margin-top: 50px;
+  }
+  .portTweedrMainBlock .beforeTweedrLine p {
+    width: 100%;
+    font-size: 80px;
+    letter-spacing: 5px;
+    margin-top: 10px;
+  }
+  .portTweedrMainBlock .afterTweedrLine p {
+    width: 100%;
+    font-size: 80px;
+    letter-spacing: 5px;
+    margin-top: 10px;
+  }
+  .portTweedrMainBlock .afterTweedrPage {
+    height: 660px;
+  }
+  .portTweedrMainBlock .beforeTweedrPage .innerBlock {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 0px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .portTweedrMainBlock .afterTweedrPage .innerBlock {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .portTweedrMainBlock #GuPicture {
+    height: auto;
+    width: 300px;
+    margin-top: -25px;
+  }
+  .portTweedrMainBlock .beforeTweedrPage #iconGit {
+    height: 40px;
+  }
+  .portTweedrMainBlock .beforeTweedrPage #iconHer {
+    height: 40px;
+  }
+  .portTweedrMainBlock .afterTweedrPage #iconGit {
+    height: 40px;
+  }
+  .portTweedrMainBlock .afterTweedrPage #iconHer {
+    height: 40px;
+  }
+  .portTweedrMainBlock .beforeTweedrPage .innerBlock .right {
+    margin-top: 100px;
+    height: 435px;
+    width: 100%;
+    border-left: 0px solid black;
+    -webkit-transition: height 2s;
+  }
+  .portTweedrMainBlock .afterTweedrPage .innerBlock .right {
+    margin-top: 100px;
+    height: 435px;
+    width: 100%;
+    border-left: 0px solid black;
+    -webkit-transition: height 2s;
+  }
+  .portTweedrMainBlock .beforeTweedrPage .innerBlock .right .descript {
+    height: 250px;
+    width: 100%;
+    z-index: -1;
+  }
+  .portTweedrMainBlock .afterTweedrPage .innerBlock .right .descript {
+    height: 250px;
+    width: 100%;
+    z-index: -1;
+  }
+  .portTweedrMainBlock .beforeTweedrPage .innerBlock .right .descript h1 {
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    padding-left: 0px;
+    margin-bottom: -10px;
+  }
+  .portTweedrMainBlock .afterTweedrPage .innerBlock .right .descript h1 {
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    padding-left: 0px;
+    margin-bottom: -10px;
+  }
+  .portTweedrMainBlock .beforeTweedrPage .innerBlock .right .descript p {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 20px;
+    padding-left: 0px;
+    padding: 0px 25px;
+  }
+  .portTweedrMainBlock .afterTweedrPage .innerBlock .right .descript p {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 20px;
+    padding-left: 0px;
+    padding: 0px 25px;
+  }
+  .portTweedrMainBlock .beforeTweedrPage .innerBlock .right .tech {
+    height: 85px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .portTweedrMainBlock .afterTweedrPage .innerBlock .right .tech {
+    height: 85px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .portTweedrMainBlock .beforeTweedrPage .innerBlock .right .tech h1 {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding-left: 0px;
+    margin-bottom: -10px;
+  }
+  .portTweedrMainBlock .afterTweedrPage .innerBlock .right .tech h1 {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding-left: 0px;
+    margin-bottom: -10px;
+  }
+  .portTweedrMainBlock .beforeTweedrPage .innerBlock .right .tech p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-left: 0px;
+    margin: 15px auto;
+  }
+  .portTweedrMainBlock .afterTweedrPage .innerBlock .right .tech p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-left: 0px;
+    margin: 15px auto;
+  }
+}
+
+/*end of media query*/
+.beforeTweedrLine {
+  height: 0px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #68AFFF;
+  transition: height 2s;
+  -webkit-transition: height 2s;
+  -moz-transition: height 2s;
+  -ms-transition: height 2s;
+}
+
+.beforeTweedrLine p {
+  font-size: 150px;
+  font-family: 'helvetica';
+  color: white;
+  letter-spacing: 100px;
+  margin: 30px auto;
+  font-weight: 600;
+  color: white;
+}
+
+.afterTweedrLine p {
+  font-size: 150px;
+  font-family: 'helvetica';
+  color: white;
+  letter-spacing: 100px;
+  margin: 30px auto;
+  font-weight: 600;
+  color: white;
+}
+
+.afterTweedrLine {
+  height: 150px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #68AFFF;
+  transition: height 2s;
+  -webkit-transition: height 2s;
+  -moz-transition: height 2s;
+  -ms-transition: height 2s;
+}
+
+.beforeTweedrPage {
+  display: inline-flex;
+  flex-direction: column;
+  height: 0px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-bottom: 0px solid #68AFFF;
+  transition: height 2s, border-bottom 2s;
+  transition-delay: border-bottom 2s;
+  -webkit-transition: height 2s, border-bottom 2s;
+  -webkit-transition-delay: border-bottom 2s;
+  -moz-transition: height 2s, border-bottom 2s;
+  -moz-transition-delay: border-bottom 2s;
+  -ms-transition: height 2s, border-bottom 2s;
+  -ms-transition-delay: border-bottom 2s;
+}
+
+.afterTweedrPage {
+  display: inline-flex;
+  flex-direction: column;
+  height: 525px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-bottom: 3px solid #68AFFF;
+  transition: height 2s;
+  transition-delay: border-bottom 2s;
+  -webkit-transition: height 2s;
+  -webkit-transition-delay: border-bottom 2s;
+  -moz-transition: height 2s;
+  -moz-transition-delay: border-bottom 2s;
+  -ms-transition: height 2s;
+  -ms-transition-delay: border-bottom 2s;
+}
+
+.beforeTweedrPage #tweedr {
+  display: inline-block;
+  position: relative;
+  margin: 15px auto;
+  height: 45px;
+  width: 45px;
+  border-radius: 180px;
+  outline: none;
+  z-index: -1;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px;
+  -webkit-box-shadow: 0.5px 0.5px 0.5px 0.5px;
+  -moz-box-shadow: 0.5px 0.5px 0.5px 0.5px;
+  -ms-box-shadow: 0.5px 0.5px 0.5px 0.5px;
+  visibility: hidden;
+  transition: visibility 1s;
+  -webkit-transition: visibility 1s;
+  -moz-transition: visibility 1s;
+  -ms-transition: visibility 1s;
+}
+
+.afterTweedrPage #tweedr {
+  display: inline-block;
+  margin: 15px auto;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  border-radius: 180px;
+  visibility: visible;
+  outline: none;
+  box-shadow: 2px 2px 2px 2px;
+  -webkit-box-shadow: 2px 2px 2px 2px;
+  -moz-box-shadow: 2px 2px 2px 2px;
+  -ms-box-shadow: 2px 2px 2px 2px;
+  transition: visibility 2s;
+  transition-delay: 1s;
+  -webkit-transition: visibility 2s;
+  -webkit-transition-delay: 1s;
+  -moz-transition: visibility 2s;
+  -moz-transition-delay: 1s;
+  -ms-transition: visibility 2s;
+  -ms-transition-delay: 1s;
+}
+
+.beforeTweedrPage .innerBlock {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 0px;
+  margin-top: 15px;
+  width: 100%;
+  transition: height 2s;
+  -webkit-transition: height 2s;
+  -moz-transition: height 2s;
+  -ms-transition: height 2s;
+}
+
+.afterTweedrPage .innerBlock {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+  height: 400px;
+  width: 100%;
+}
+
+.beforeTweedrPage .innerBlock .left {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 15px;
+  height: 400px;
+  width: 100%;
+  transition: margin-top 2s;
+  -webkit-transition: margin-top 2s;
+  -moz-transition: margin-top 2s;
+  -ms-transition: margin-top 2s;
+}
+
+.afterTweedrPage .innerBlock .left {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 15px;
+  height: 400px;
+  width: 100%;
+  transition: margin-top 2s;
+  -webkit-transition: margin-top 2s;
+  -moz-transition: margin-top 2s;
+  -ms-transition: margin-top 2s;
+}
+
+#GuPicture {
+  display: inline-block;
+  position: relative;
+  height: auto;
+  width: 525px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow:  0px 0px 10px 5px rgba(104, 175, 255, 0.3), 0 0 40px rgba(104, 175, 255, 0.3) inset;
+  -webkit-box-shadow:  0px 0px 10px 5px rgba(104, 175, 255, 0.3), 0 0 40px rgba(104, 175, 255, 0.3) inset;
+  -moz-box-shadow:  0px 0px 10px 5px rgba(104, 175, 255, 0.3), 0 0 40px rgba(104, 175, 255, 0.3) inset;
+  -ms-box-shadow:  0px 0px 10px 5px rgba(104, 175, 255, 0.3), 0 0 40px rgba(104, 175, 255, 0.3) inset;
+}
+
+.beforeTweedrPage .innerBlock .left .icons {
+  display: inline-flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  width: 150px;
+  text-align: center;
+  margin: 10px auto 0px;
+}
+
+.afterTweedrPage .innerBlock .left .icons {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  height: auto;
+  width: 150px;
+  margin: 10px auto 0px;
+}
+
+.beforeTweedrPage #iconGit {
+  display: inline-block;
+  height: 50px;
+  width: auto;
+}
+
+.beforeTweedrPage #iconHer {
+  display: inline-block;
+  height: 50px;
+  width: auto;
+}
+
+.afterTweedrPage #iconGit {
+  display: inline-block;
+  height: 50px;
+  width: auto;
+}
+
+.afterTweedrPage #iconHer {
+  display: inline-block;
+  height: 50px;
+  width: auto;
+}
+
+.beforeTweedrPage .innerBlock .right {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  margin: 100px 50px 0px 0px;
+  height: 200px;
+  width: 100%;
+  border-left: 2px solid black;
+  text-align: center;
+}
+
+.afterTweedrPage .innerBlock .right {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  margin: 100px 50px 0px 0px;
+  height: 200px;
+  width: 100%;
+  border-left: 2px solid black;
+  text-align: center;
+}
+
+.beforeTweedrPage .innerBlock .right .descript {
+  display: inline-block;
+  position: relative;
+  height: 250px;
+  width: 100%;
+  margin-top: -100px;
+  text-align: center;
+}
+
+.afterTweedrPage .innerBlock .right .descript {
+  display: inline-block;
+  position: relative;
+  height: 250px;
+  width: 100%;
+  margin-top: -100px;
+  text-align: center;
+}
+
+.beforeTweedrPage .innerBlock .right .descript h1 {
+  font-family: 'helvetica';
+  font-weight: 300;
+  letter-spacing: 5px;
+  padding-left: 40px;
+}
+
+.afterTweedrPage .innerBlock .right .descript h1 {
+  font-family: 'helvetica';
+  font-weight: 300;
+  letter-spacing: 5px;
+  padding-left: 40px;
+}
+
+.beforeTweedrPage .innerBlock .right .descript p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: 200;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: black;
+  padding-left: 40px;
+}
+
+.afterTweedrPage .innerBlock .right .descript p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: 200;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: black;
+  padding-left: 40px;
+}
+
+.beforeTweedrPage .innerBlock .right .tech {
+  display: inline-block;
+  position: relative;
+  height: 200px;
+  width: 100%;
+  border-top: 1px solid black;
+  text-align: center;
+}
+
+.afterTweedrPage .innerBlock .right .tech {
+  display: inline-block;
+  position: relative;
+  height: 200px;
+  width: 100%;
+  border-top: 1px solid black;
+  text-align: center;
+}
+
+.beforeTweedrPage .innerBlock .right .tech h1 {
+  font-size: 25px;
+  font-family: 'helvetica';
+  font-weight: 300;
+  letter-spacing: 3px;
+  padding-left: 40px;
+}
+
+.afterTweedrPage .innerBlock .right .tech h1 {
+  font-size: 25px;
+  font-family: 'helvetica';
+  font-weight: 300;
+  letter-spacing: 3px;
+  padding-left: 40px;
+}
+
+.beforeTweedrPage .innerBlock .right .tech p {
+  color: black;
+  font-size: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-left: 40px;
+}
+
+.afterTweedrPage .innerBlock .right .tech p {
+  color: black;
+  font-size: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  padding-left: 40px;
+}

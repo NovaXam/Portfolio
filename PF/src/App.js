@@ -8,6 +8,7 @@ import Guess from './components/Guess';
 import Surfer from './components/Surfer';
 import Monster from './components/Monster';
 import MissionX from './components/MissionX';
+import Tweedr from './components/Tweedr';
 import Source from './components/Source';
 import Resume from './components/Resume';
 import Footer from './components/partials/Footer';
@@ -33,6 +34,8 @@ class App extends Component {
       portMonsterPage: 'beforeMonsterPage',
       portMissionXLine: 'beforeMissionXLine',
       portMissionXPage: 'beforeMissionXPage',
+      portTweedrLine: 'beforeTweedrLine',
+      portTweedrPage: 'beforeTweedrPage',
       sourceLine: 'beforeSourceLine',
       sourcePage: 'beforeSourcePage',
       resumeLine: 'beforeResumeLine',
@@ -47,6 +50,7 @@ class App extends Component {
       workPointerSurf: {},
       workPointerMon: {},
       workPointerMiss: {},
+      workPointerTweedr: {},
       height: { height: '0px' },
       heightAbout: {
         height: '0px',
@@ -72,6 +76,10 @@ class App extends Component {
         height: '0px',
         transition: 'height 2s',
       },
+      heightTweedr: {
+        height: '0px',
+        transition: 'height 2s',
+      },
     };
 
     this.handleMainListener = this.handleMainListener.bind(this);
@@ -91,6 +99,8 @@ class App extends Component {
     this.handleSourceListenerRollBack = this.handleSourceListenerRollBack.bind(this);
     this.handleResumeListenerRollBack = this.handleResumeListenerRollBack.bind(this);
     this.handlerResumeListener = this.handlerResumeListener.bind(this);
+    this.handlerPortTweedListener = this.handlerPortTweedListener.bind(this);
+    this.handlePortTweedrListenerRollBack = this.handlePortTweedrListenerRollBack.bind(this);
   }
 
   componentWillMount() {
@@ -203,6 +213,7 @@ class App extends Component {
         portGuessPage: 'afterGuessPage',
         workPointerGuess: {
           backgroundColor: 'rgba(32,152,209,0.8)',
+          color: "white"
         },
       });
       if(window.screen.width <= 500) {
@@ -236,6 +247,7 @@ class App extends Component {
         portSurferPage: 'afterSurferPage',
         workPointerSurf: {
           backgroundColor: 'rgba(32,152,209,0.8)',
+          color: "white"
         },
       });
       if(window.screen.width <= 500) {
@@ -269,6 +281,7 @@ class App extends Component {
         portMonsterPage: 'afterMonsterPage',
         workPointerMon: {
           backgroundColor: 'rgba(32,152,209,0.8)',
+          color: "white"
         },
       });
       if(window.screen.width <= 500) {
@@ -302,9 +315,10 @@ class App extends Component {
         portMissionXPage: 'afterMissionXPage',
         workPointerMiss: {
           backgroundColor: 'rgba(32,152,209,0.8)',
+          color: "white"
         },
       });
-      if(window.screen.width <= 500) {
+      if (window.screen.width <= 500) {
         this.setState({
           heightMissionX: {
             height: '750px',
@@ -320,6 +334,39 @@ class App extends Component {
         });
       }
       scroller.scrollTo('MissionX', {
+        smooth: true,
+      });
+    } catch (err) {
+      console.log(err);
+    }
+  }
+  async handlerPortTweedListener(event) {
+    try {
+      const prev = await event.preventDefault();
+      const state = await this.setState({
+        portTweedrLine: 'afterTweedrLine',
+        portTweedrPage: 'afterTweedrPage',
+        workPointerTweedr: {
+          backgroundColor: 'rgba(32,152,209,0.8)',
+          color: "white"
+        },
+      });
+      if (window.screen.width <= 500) {
+        this.setState({
+          heightTweedr: {
+            height: '750px',
+            transition: 'height 2s',
+          },
+        });
+      } else {
+        this.setState({
+          heightTweedr: {
+            height: '675px',
+            transition: 'height 2s',
+          },
+        });
+      }
+      scroller.scrollTo('Tweedr', {
         smooth: true,
       });
     } catch (err) {
@@ -476,6 +523,19 @@ class App extends Component {
     });
   }
 
+  handlePortTweedrListenerRollBack(event) {
+    event.preventDefault();
+    this.setState({
+      portTweedrLine: 'beforeTweedrLine',
+      portTweedrPage: 'beforeTweedrPage',
+      workPointerTweedr: {},
+      heightTweedr: {
+        height: '0px',
+        transition: 'height 2s',
+      },
+    });
+  }
+
   handleSourceListenerRollBack(event) {
     event.preventDefault();
     this.setState({
@@ -530,12 +590,14 @@ class App extends Component {
           workPointerSurf={this.state.workPointerSurf}
           workPointerMon={this.state.workPointerMon}
           workPointerMiss={this.state.workPointerMiss}
+          workPointerTweedr={this.state.workPointerTweedr}
           handlePortfolioListenerRollBack={this.handlePortfolioListenerRollBack}
           handleWorksListener={this.handleWorksListener}
           handlerPortGuessListener={this.handlerPortGuessListener}
           handlerPortSurfListener={this.handlerPortSurfListener}
           handlerPortMonListener={this.handlerPortMonListener}
           handlerPortMissListener={this.handlerPortMissListener}
+          handlerPortTweedListener={this.handlerPortTweedListener}
         />
         <Guess
           portGuessLine={this.state.portGuessLine}
@@ -560,6 +622,12 @@ class App extends Component {
           portMissionXPage={this.state.portMissionXPage}
           heightMissionX={this.state.heightMissionX}
           handlePortMissListenerRollBack={this.handlePortMissListenerRollBack}
+        />
+        <Tweedr
+          portTweedrLine={this.state.portTweedrLine}
+          portTweedrPage={this.state.portTweedrPage}
+          heightTweedr={this.state.heightTweedr}
+          handlePortTweedrListenerRollBack={this.handlePortTweedrListenerRollBack}
         />
         <Source
           sourceLine={this.state.sourceLine}

@@ -34,7 +34,7 @@
   .portMainBlock .hvr-back-pulse {
     height: 128px;
     width: 128px;
-    left: -146px;
+    left: -126px;
     top: -60px;
   }
   .portMainBlock .hvr-back-pulse h1 {
@@ -156,22 +156,27 @@
   height: 300px;
   width: 300px;
   z-index: 1;
+  margin: 0px 20px;
 }
 
 .afterPortPage ul li {
   height: 300px;
   width: 300px;
   z-index: 1;
+  margin: 0px 20px;
 }
 
 .portMainBlock ul {
   display: inline-flex;
+  flex-direction: row;
   position: relative;
   list-style: none;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 0px;
-  overflow-x: auto;
+  justify-content: space-between;
+  margin-left: -50px;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow-x: scroll;
   overflow-y: hidden;
 }
 
@@ -179,7 +184,6 @@
   height: 300px;
   width: 300px;
   border-radius: 10px;
-  margin: 0px 20px 0px;
   box-shadow:  0 1px 5px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   transition: height 2s, width 2s, margin 2s;
   -webkit-box-shadow:  0 1px 5px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -194,7 +198,6 @@
   height: 300px;
   width: 300px;
   border-radius: 10px;
-  margin: 0px 20px 0px;
   box-shadow:  0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   transition: height 2s, width 2s, margin 2s;
   transition-delay: 1s;
@@ -225,7 +228,7 @@
   height: 300px;
   width: 300px;
   position: relative;
-  left: -321px;
+  left: -300px;
   top: -147px;
   border-radius: 10px;
   color: transparent;
@@ -256,3 +259,4 @@
   margin: 120px auto;
   font-size: 30px;
 }
+
