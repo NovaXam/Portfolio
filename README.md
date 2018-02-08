@@ -19,8 +19,7 @@ and also to reviel his personality.
 
 ## Technologies
 
-> Architecture of the app built on React. Following good practice, all changes of the app render in
-one base stateful component.
+> Architecture of the app built on React. Following good practice, all changes of the app are rendered in one base stateful component.
 > All visual solutions include effects are built, customized and stored in CSS files.
 
 ***
@@ -32,7 +31,7 @@ one base stateful component.
 * Verify and install necessary modules from packeage.json file.
 * At this stage everything should be set up.
 * Type npm start command into your terminal.
-* Web app should be opened into your browser.
+* Web app should be opened into the localhost in your browser
 
 ***
 
@@ -107,7 +106,7 @@ Stage | Priority | Estimated time, h | Invested time, h
 `Tests` | `H` | `16` | `16`
 `Design` | `H` | `24` | `24`
 `Responsive` | `L` | `16` | `16`
-**Total** | **120** | **136**
+**Total** |  | **120** | **136**
 
 ___
 
