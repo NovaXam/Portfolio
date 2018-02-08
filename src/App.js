@@ -103,12 +103,6 @@ class App extends Component {
     this.handlePortTweedrListenerRollBack = this.handlePortTweedrListenerRollBack.bind(this);
   }
 
-  componentWillMount() {
-  }
-
-  componentDidMount() {
-  }
-
   handleMainListener(event) {
     event.preventDefault();
     this.state.mainFlag ? (
